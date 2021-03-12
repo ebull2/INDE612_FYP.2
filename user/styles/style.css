@@ -1,0 +1,55 @@
+
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.h1 {
+
+    color:  #804DB3;
+}
+
+.h2  {
+
+    font-size: 4em !important; 
+    color:  #804DB3 !important;
+
+}
+
+
+.container {
+    display: flex;
+    background-color: white !important;
+    justify-content: center !important;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    height: 250px;
+    display: inline-block;
+    background-color: white !important;
+
+}
+
+
+#BitcoinPrice {
+
+    color: #804DB3;
+    font-size: 2em;
+}
+
+#EthereumPrice {
+
+    color: #804DB3;
+    font-size: 2em;
+}
+
+#RipplePrice {
+
+    color: #804DB3;
+    font-size: 2em;
+}
