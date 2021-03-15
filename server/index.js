@@ -1,46 +1,67 @@
 
-const express = require('express')
-const app = express()
-const port = 3000
-
-
-
+const express = require('express');
+const app = express();
+const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 
-const scrapers = require('./scrapers');
-const db = require('./db')
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
-app.use(bodyParser.json())
-app.use(function(req, res, next) {
+mongoose.connect("mongodb+srv://root:q2dhQpDjV36TXh9I@cluster0.v71fr.mongodb.net/mainDB", { useNewUrlParser: true }, { useUnifiedTopology: true })
 
-    res.header("Access-Control-Allow-Origin", "*"); //Disable Security Rule
-    res.header("Access-Control-Allow-Headers", "ContentType");
-    next();
+
+const cryptoPricesSchema = {
+
+    title: String,
+    price: String
+
+}
+
+const cryptoData = mongoose.model("cryptoData", cryptoPricesSchema);
+
+
+  app.get("server/data.json", function(req, res) {
+
+    res.sendFile( __dirname , "./user/index.html",);
+
+})
+
+app.post("/", function(req, res) {
+
+
+  console.log("price: ", req.body.BTCprice);
+
+  res.send();
+  
 });
 
 
-app.get('/allData', async (req, res) => {
-    const cryptoPrices = await db.getAllcryptoPrices();
-    res.send(cryptoPrices)
+
+
+
+app.listen(3000, function() {
+  console.log("App listening at http://localhost:3000")
 })
 
 
-app.post('/allData', async(req, res) =>{
-
-    console.log(req,body)
-    //to do later
-    const cryptoPricesData = await scrapers.scrapeAddress(req.body.cryptoPricesURL)
-    const cryptoPrices = await db.insertcryptoPrices(cryptoPricesData.price, req.body.cryptoPricesURL)
-    res.send(cryptoPrices)
-
-    console.log(req,body)
-    //to do later
-    const surfNewsData = await scrapers.scrapeAddress2(req.body.surfNewsURL)
-    const SurfNews = await db.insertsurfNews(surfNewsData.img, surfNewsData.name, 
-    res.send(surfNews))
-})
 
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-  })
+
+// app.get('/allData', async (req, res) => {
+//     const cryptoPrices = await db.getAllcryptoPrices();
+//     res.send(cryptoPrices)
+// })
+
+
+// app.post('/allData', async(req, res) =>{
+
+//     console.log(req,body)
+//     //to do later
+//     const cryptoPricesData = await scrapers.scrapeAddress(req.body.cryptoPricesURL)
+//     const cryptoPrices = await db.insertcryptoPrices(cryptoPricesData.price, req.body.cryptoPricesURL)
+//     res.send(cryptoPrices)
+
+// })
+
+
