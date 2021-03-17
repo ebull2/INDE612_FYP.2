@@ -35,7 +35,13 @@ app.post("/", function(req, res) {
 
   let newData = new cryptoData({
     title: req.body.Bitcoin,
-    Price: req.body.BitcoinPrice
+    Price: req.body.BitcoinPrice,
+    title: req.body.Ethereum,
+    Price: req.body.EthereumPrice,
+    title: req.body.Ripple,
+    Price: req.body.RipplefPrice
+
+
 
   })
  
