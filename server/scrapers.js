@@ -45,7 +45,6 @@ async function scrapeAddress(url) {
     const data = JSON.stringify(cryptoPrices, null, 3 );
     
     fs.writeFileSync('server/data.json', data,);
-    
 
     console.log({BTCprice, ETHprice, XRPprice});
 
