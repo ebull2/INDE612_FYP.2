@@ -1,6 +1,6 @@
 # INDE612_FYP
 
-**Final Year Project
+**Final Year Project**
 
 First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new one as it wasn't in sync' 
 
