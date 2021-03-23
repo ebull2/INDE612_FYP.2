@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/scrapers.js"
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/ebull2/INDE612_FYP.2#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "5.7",
+    "express-handlebars": "^5.2.1",
+    "mongoose": "^5.11.15",
     "nodemon": "^2.0.7",
     "puppeteer": "^8.0.0"
   }
