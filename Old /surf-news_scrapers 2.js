@@ -1,7 +1,7 @@
 
 const puppeteer = require('puppeteer');
 
-async function scrapeAddress2(url) {
+async function scrapeAddress3(url) {
 
     const browser = await puppeteer.launch();
     const page  = await browser.newPage();
@@ -56,11 +56,11 @@ async function scrapeAddress2(url) {
 
 module.exports = { 
 
-    scrapeAddress2
+    scrapeAddress3
 }
 
     
-    scrapeAddress2('https://news.surfoutlook.com/category/surfing/');
+    scrapeAddress3('https://news.surfoutlook.com/category/surfing/');
 
 
 

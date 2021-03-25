@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/styles/style.css">
+    <title>UNIFY</title>
+</head>
+<body>
+
+        <div class="text-center">
+        <img src="assets/main-logo.png" width=90px class="text-center mt-4">
+        </div>
+
+
+        <div class="container mt-2">
+         <div class="col-xl-12 col-l-10">
+         <div class="row">
+
+        <div class="card text-center bitcoin">
+
+        <img src="assets/btc-logo.png" width=100px>
+        <h1 class="BTC-h">Bitcoin</h1>
+        <div name="BitcoinPrice" id="BitcoinPrice"></div>
+        <p class="volume">Volume 24h</p>
+        <div id="BitcoinVolume"></div>
+        </div>
+
+        <div class="card text-center Ethereum">
+            <img src="assets/eth-logo.png" width=70px class="text-center">
+            <h1 class="ETH-h">Ethereum</h1>
+            <div id="EthereumPrice"></div>
+            <p class="volume">Volume 24h</p>
+        <div id="EthereumVolume"></div>
+        </div>
+
+        <div class="card text-center Ripple">
+            <img src="assets/xrp-logo.png" width=100px class="mt-3">
+                <h1 class="mt-4 XRP-h" >Ripple</h1>
+                <div id="RipplePrice"></div>
+                <p class="volume">Volume 24h</p>
+        <div id="RippleVolume"></div>
+        </div>
+
+
+                <!-- <div class="card crypto-chart" style="width: 600px;">
+                    <div class="card-body">
+                    </div>
+                </div>        -->
+             </div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xl-7 mt-2">
+
+            <div class="title">
+            <h1>What Is Crypto Currency?</h1> 
+            </div>
+
+            <div class="Intro">
+            <br><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                 nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in 
+                 vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero 
+                 eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis 
+                 dolore te feugait nulla facilisi.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. 
+                 </p>
+            </div>
+
+           </div>
+
+
+        <div class="col-xl-4  mt-5">
+            <div class="news">
+                <h1 class="newsH">TOP CRYPTO NEWS</h1>
+
+                <div id="cryptoImg"></div>
+                <div class="mt-2" id="cryptoTitle"></div>
+
+                <div class="mt-2" id="cryptoSrc"><div>
+
+                <div id="cryptoTime"></div>
+
+                </div>    
+               </div>
+            </div>
+           </div>
+           </div>
+
+
+<script>
+
+  
+
+    fetch('/server/data.json')
+        .then(response => response.json())
+        .then(data => {
+
+            console.log(data)
+            document.querySelector("#BitcoinPrice").innerText = data.BTCprice
+            document.querySelector("#EthereumPrice").innerText = data.ETHprice
+            document.querySelector("#RipplePrice").innerText = data.XRPprice
+            document.querySelector("#BitcoinVolume").innerText = data.BTCvolume
+            document.querySelector("#EthereumVolume").innerText = data.ETHvolume
+            document.querySelector("#RippleVolume").innerText = data.XRPvolume
+           
+            
+        }).catch(err => {
+        // code to handle request errors
+        console.error('Error: ', err);
+    }); 
+    
+
+    fetch('/server/news-data.json')
+        .then(response => response.json())
+        .then(news => {
+
+            console.log(news)
+            document.querySelector("#cryptoTitle").innerText = news.newsTitle
+            // document.querySelector("#cryptoImg").src = news.newsImg
+            document.querySelector("#cryptoSrc").innerText = news.newsSrc
+            // document.querySelector("#cryptoTime").innerText = news.newsTime
+
+
+                var newsImg = '';
+                for( var i = 0; i < newsImg.length; ++i ) {
+                newsImg += '<img src="' + newsImg[i]['image_path'] + newsImg[i]['image_nm'] + '" />';
+                }
+
+            document.querySelector("#cryptoImg").innerHTML = news.newsImg;
+
+            
+        }).catch(err => {
+        // code to handle request errors
+        console.error('Error: ', err);
+    });
+
+
+
+
+</script>
+
+
+</body>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+</html>

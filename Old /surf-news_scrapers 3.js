@@ -21,7 +21,7 @@ async function scrapeAddress2(url) {
     await page.waitForXPath('//*[@id="td-outer-wrap"]/div[3]/div/div/div[1]/div/div[2]/div[1]/a/img');
     const [el3]= await page.$x('//*[@id="td-outer-wrap"]/div[3]/div/div/div[1]/div/div[2]/div[1]/a/img');
     const src = await el3.getProperty('src');
-    const  surfImg= await src.jsonValue();
+    const  surfImg = await src.jsonValue();
 
 
 

@@ -1,0 +1,186 @@
+
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.h1 {
+
+    color:  #804DB3;
+    font-family: 'Comfortaa', cursive !important
+}
+
+.h2  {
+
+    font-size: 4em !important; 
+    color:  #804DB3 !important;
+    font-family: 'Comfortaa', cursive !important
+
+}
+
+.p {
+
+    font-size: 0.5em !important; 
+    color:  #a3a3a3 !important;
+    font-family: 'Comfortaa', cursive !important
+
+}
+
+.container {
+    display: flex;
+    background-color: white !important;
+    margin-left: 0px;
+    
+}
+
+.card {
+    margin: 20px;
+    margin-left: 30px;
+    padding: 20px;
+    height: 330px;
+    width: 250px;
+    display: inline-block;
+    background-color: white !important;
+    border-radius: 20px;
+    border-color: rgba(187, 187, 187, 0.281);
+    box-shadow: 10px 10px 5px rgba(224, 224, 224, 0.432);
+
+}
+
+.BTC-h { 
+    margin-top: 20px;
+    color: #a8a8a8;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive    
+
+
+}
+
+.ETH-h { 
+    margin-top: 10px;
+    color: #a8a8a8;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive    
+
+
+}
+
+.XRP-h { 
+    margin-top: 10px;
+    color: #a8a8a8;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive    
+
+
+}
+
+.volume 
+{
+    margin-top: 10px;
+    font-size: 0.8em !important; 
+    color:  #5e5e5e !important;
+    font-family: 'Comfortaa', cursive !important
+
+}
+
+#BitcoinPrice {
+
+    margin-top: 10px;
+    color: #804DB3;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive
+}
+
+
+
+#EthereumPrice {
+
+    color: #804DB3;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive
+}
+
+#RipplePrice {
+
+    color: #804DB3;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive
+}
+
+
+#BitcoinVolume, #EthereumVolume, #RippleVolume
+{
+
+    color: #80b34d;
+    font-size: 0.8em;
+    font-family: 'Comfortaa', cursive
+}
+
+
+
+.crypto-chart {
+
+    display: flex;
+    float: right;
+}
+
+
+.title
+{
+
+    margin-top:40px;
+    margin-left: 50px;
+    color: #804DB3;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive
+
+}
+
+.Intro
+{
+
+    margin-top:10px;
+    margin-left: 50px;
+    color: #727272;
+    font-size: 1em;
+    font-family: 'Comfortaa', cursive
+
+}
+
+
+.news {
+
+margin-left: 80px;
+
+}
+
+
+.newsH {
+
+
+    color: #804DB3;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive
+}
+
+#cryptoTitle 
+{
+    
+    color: #727272;
+    font-size: 1em;
+    font-family: 'Comfortaa', cursive
+
+}
+
+#cryptoSrc 
+{
+
+    color: #b8b8b8;
+    font-size: 0.8em;
+    font-family: 'Comfortaa', cursive
+
+
+}
