@@ -9,20 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../public/styles/style.css">
+    <link rel="shortcut icon" href="./assets/icon-logo.png" type="image/png">
+
     <title>UNIFY</title>
 </head>
 <body>
 
-        <div class="text-center">
-        <img src="assets/main-logo.png" width=90px class="text-center mt-4">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+
+      </div>
+
+      <span style="font-size:30px;cursor:pointer;margin-left:50px;" class="nav-icon toggleable" onclick="openNav()">&#10304;&#10304;&#10304;
+    </span>
+
+        <div class="text-center logo-icon">
+        <img src="assets/icon-logo.png" width=50px>
         </div>
 
 
-        <div class="container mt-2">
-         <div class="col-xl-12 col-l-10">
-         <div class="row">
-
+        <div class="container-fluid mt-2">
+           <div class="row">
+         <div class="col col-xl-7 align-items-start">
+         
+        
         <div class="card text-center bitcoin">
 
         <img src="assets/btc-logo.png" width=100px>
@@ -41,24 +56,28 @@
         </div>
 
         <div class="card text-center Ripple">
-            <img src="assets/xrp-logo.png" width=100px class="mt-3">
+            <img src="assets/xrp-logo.png" width=90px class="mt-4">
                 <h1 class="mt-4 XRP-h" >Ripple</h1>
                 <div id="RipplePrice"></div>
                 <p class="volume">Volume 24h</p>
         <div id="RippleVolume"></div>
         </div>
+         </div>
 
+            <div class="col-xl-4 col-xs-2 align-items-end">
+                <div class="card" style="width: 600px;">
+                    <h1 class="chart">Chart</h1>
 
-                <!-- <div class="card crypto-chart" style="width: 600px;">
-                    <div class="card-body">
+                    <canvas id="cryptoChart" width="400px" height="150px"></canvas>
                     </div>
-                </div>        -->
+                </div>    
+
              </div>
-          </div>
+
         </div>
 
 
-
+        <div class="container-fluid">
         <div class="row">
             <div class="col-xl-7 mt-2">
 
@@ -82,22 +101,35 @@
            </div>
 
 
-        <div class="col-xl-4  mt-5">
+        <div class="col-xl-5 mt-5">
             <div class="news">
                 <h1 class="newsH">TOP CRYPTO NEWS</h1>
 
-                <div id="cryptoImg"></div>
-                <div class="mt-2" id="cryptoTitle"></div>
 
-                <div class="mt-2" id="cryptoSrc"><div>
+                <div class="mt-5" id="cryptoTitle"></div>
 
-                <div id="cryptoTime"></div>
+                <div class="mt-2" id="cryptoSrc"></div>
+
+                <div class="mt-2" id="cryptoTitle2"></div>
+
+                <div class="mt-2" id="cryptoSrc2"></div>   
+
+                <div class="mt-2" id="cryptoTitle3"></div>
+
+                <div class="mt-2" id="cryptoSrc3"></div>  
+
+                <div class="mt-2" id="cryptoTitle4"></div>
+
+                <div class="mt-2" id="cryptoSrc4"></div>  
 
                 </div>    
                </div>
             </div>
            </div>
            </div>
+        </div>
+
+     
 
 
 <script>
@@ -115,6 +147,7 @@
             document.querySelector("#BitcoinVolume").innerText = data.BTCvolume
             document.querySelector("#EthereumVolume").innerText = data.ETHvolume
             document.querySelector("#RippleVolume").innerText = data.XRPvolume
+
            
             
         }).catch(err => {
@@ -129,17 +162,23 @@
 
             console.log(news)
             document.querySelector("#cryptoTitle").innerText = news.newsTitle
-            // document.querySelector("#cryptoImg").src = news.newsImg
-            document.querySelector("#cryptoSrc").innerText = news.newsSrc
-            // document.querySelector("#cryptoTime").innerText = news.newsTime
+            document.querySelector("#cryptoSrc").innerText = news.newsSrc,
 
+            document.querySelector("#cryptoTitle2").innerText = news.newsTitle2
+            document.querySelector("#cryptoSrc2").innerText = news.newsSrc2
 
-                var newsImg = '';
-                for( var i = 0; i < newsImg.length; ++i ) {
-                newsImg += '<img src="' + newsImg[i]['image_path'] + newsImg[i]['image_nm'] + '" />';
-                }
+            document.querySelector("#cryptoTitle3").innerText = news.newsTitle3
+            document.querySelector("#cryptoSrc3").innerText = news.newsSrc3
 
-            document.querySelector("#cryptoImg").innerHTML = news.newsImg;
+            document.querySelector("#cryptoTitle4").innerText = news.newsTitle4
+            document.querySelector("#cryptoSrc4").innerText = news.newsSrc4
+
+            //     var newsImg = '';
+            //     for( var i = 0; i < newsImg.length; ++i ) {
+            //     newsImg += '<img src="' + newsImg[i]['image_path'] + newsImg[i]['image_nm'] + '" />';
+            //     }
+
+            // document.querySelector("#cryptoImg").innerHTML = news.newsImg;
 
             
         }).catch(err => {
@@ -148,7 +187,100 @@
     });
 
 
+    var xmlhttp =  new XMLHttpRequest();
+    var url = "http://127.0.0.1:5500/server/news-data.json";
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange = function() {
 
+        if(this.readState == 4 && this.stateus == 200){
+
+            const pricesData = JSON.parse(this.responseText);
+            console.log(pricesData)
+
+            const BTCdata = pricesData.cryptoPrices(function(elem){
+                return elem.BTCprice;
+            });
+            // console.log(BTCdata)
+
+            const ETHdata = pricesData.cryptoPrices(function(elem){
+                return elem.ETHprice;
+            });
+            // console.log(ETHdata)
+            const XRPdata = pricesData.cryptoPrices(function(elem){
+                return elem.XRPprice;
+            });
+            // console.log(XRPdata)
+        }
+
+    }
+
+    var ctx = document.getElementById('cryptoChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: 'Bitcoin',
+            data: BTCdata,
+            backgroundColor: [
+            'transparent',
+              
+            ],
+            borderColor: [
+            '#804DB3'
+            ],
+            borderWidth: 0.8
+        },
+        {
+        label: 'Ethereum',
+            data: ETHdata,
+            backgroundColor: [
+            'transparent',
+              
+            ],
+            borderColor: [
+            '#804DB3'
+            ],
+            borderWidth: 0.8
+        },
+        {
+        label: 'Ripple',
+            data: XRPdata,
+            backgroundColor: [
+            'transparent',
+              
+            ],
+            borderColor: [
+            '#804DB3'
+            ],
+            borderWidth: 0.8
+        }]
+    },
+    options: {
+        elements:{
+            line: {
+                tension: 0
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+
+function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
 
 </script>
 
