@@ -11,6 +11,8 @@ npm install  nodemon puppeteer mongoose express body-parser bcryptjs jsonwebtoke
 
 # Unify 
 
+![main-logo](public/assets/main-logo.png)
+
 A place to learn  crypto lightly.
 
 
