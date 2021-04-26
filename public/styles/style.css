@@ -29,6 +29,27 @@ body {
 
 }
 
+
+a:link {
+  color: #804DB3;
+}
+
+/* visited link */
+a:visited {
+  color: #9672b9;
+}
+
+/* mouse over link */
+a:hover {
+  color: #9672b9;
+  text-decoration: solid;
+}
+
+/* selected link */
+a:active {
+  color: #9672b9;
+}
+
 .container {
     background-color: white !important;
     margin-left: 0px;
@@ -180,8 +201,9 @@ body {
     margin-top:10px;
     margin-left: 50px;
     color: #727272;
-    font-size: 1em;
-    font-family: 'Comfortaa', cursive
+    font-size: 1.2em;
+    font-family: 'Questrial', sans-serif !important;
+    line-height: 1.65em;
 
 }
 
@@ -205,8 +227,9 @@ margin-left: 80px;
 {
     
     color: #727272;
-    font-size: 1em;
-    font-family: 'Comfortaa', cursive
+    font-size: 1.05em;
+    font-family: 'Questrial', sans-serif !important;
+    line-height: 1.55em;
 
 }
 
@@ -215,7 +238,8 @@ margin-left: 80px;
 
      color: #80b34d;
     font-size: 0.8em;
-    font-family: 'Comfortaa', cursive
+    font-family: 'Questrial', sans-serif !important;
+    line-height: 1.65em;
 
 
 }
@@ -354,9 +378,9 @@ margin-left: 80px;
     -8px 8px 12px 0 rgba(0, 0, 0, 0.1),
     12px -12px 16px rgba(255, 255, 255, 0.25);
     transition: width 1s, height 2s;
-    font-family: 'Comfortaa', cursive !important;
-    font-size: 1em !important; 
-    color:  #a3a3a3 !important;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 1.2em !important; 
+    color: #727272;
 }
 
 .socials

@@ -9,9 +9,19 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
 npm install  nodemon puppeteer mongoose express body-parser bcryptjs jsonwebtoken buffer-shims
 
+
+## TO RUN:
+
+In terminal - 
+
+
+nodemon server/scrapers.js     
+
+nodemon server/CryptoNews-scraper.js
+
 # Unify 
 
-![main-logo](public/assets/main-logo.png)
+![main-logo](public/assets/main-logo.pngs)
 
 A place to learn  crypto lightly.
 

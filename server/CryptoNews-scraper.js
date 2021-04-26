@@ -100,7 +100,7 @@ async function scrapeAddress2(url) {
     
     fs.writeFileSync('server/news-data.json', news);
 
-    console.log({ newsTitle, newsImg, newsSrc, newsTitle2, newsSrc2, newsSrc3, newsTitle4, newsSrc4 });
+    console.log({ newsTitle, newsSrc, newsTitle2, newsSrc2, newsSrc3, newsTitle4, newsSrc4 });
 
 
     return { newsTitle, newsImg, newsSrc, newsTitle2, newsSrc2, newsTitle3, newsSrc3, newsTitle4, newsSrc4}
