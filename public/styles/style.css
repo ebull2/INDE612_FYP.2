@@ -31,7 +31,9 @@ body {
 
 
 a:link {
-  color: #804DB3;
+  color: #8b62b4;
+  text-decoration: wavy;
+
 }
 
 /* visited link */
@@ -41,8 +43,8 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #9672b9;
-  text-decoration: solid;
+  color: #b69fce;
+
 }
 
 /* selected link */
@@ -247,7 +249,7 @@ margin-left: 80px;
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -255,7 +257,7 @@ margin-left: 80px;
     background-color: #804DB3;
     background-image: linear-gradient(#804DB3, rgba(255, 255, 255, 0));
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.8s;
     padding-top: 60px;
   }
   
@@ -396,3 +398,122 @@ margin-left: 80px;
 
     color: #a483c0;
 }
+
+
+
+#separator {
+  width:100%;
+  height:2px;
+  background-color:#a3a3a344;
+  text-decoration: dashed;
+  opacity: 80%;
+  margin-top:6px;
+  margin-bottom: 4px;
+  float:left;
+  }
+
+
+  #BigSeparator {
+    width:100%;
+    height:4px;
+    background-color:#a3a3a3a4;
+    text-decoration: dashed;
+    opacity: 80%;
+    margin-top:6px;
+    margin-bottom: 4px;
+    float:left;
+    }
+
+
+  .ml-9
+  {
+
+    margin-left: 20%
+
+  }
+
+  .ml-10 
+  {
+
+    margin-left: 180px
+
+  }
+
+  .row {
+
+    margin-left: 0px !important;
+  }
+
+  #rating1, #rating2, #rating3, #rating4, #rating5, #rating6, #rating7, #rating8, #rating9, #rating10 {
+
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 330px;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 10px;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  background-color: #804DB3;
+
+
+  }
+
+  .data-link {
+
+    color: #9f7fc0;
+    font-size: 14px;
+
+  }
+
+  .binanceImg
+  {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+
+  }
+
+  .card2-body
+  {
+
+    margin: 40px;
+    padding: 40px;
+    display: inline-block;
+    background-color: white !important;
+    border-radius: 55px;
+    border: 0px;
+    border-color: rgba(187, 187, 187, 0.281);
+    background: linear-gradient(-45deg, rgba(233, 233, 233, 0.22), rgba(255,255,255,0.25));
+    box-shadow:
+    6px 8px 10px 6px rgba(0, 0, 0, 0.1),
+    8px -12px 12px rgba(255, 255, 255, 0.25);
+    transition: width 1s, height 2s;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 1.2em !important; 
+    color: #727272;
+
+
+  }
+
+
+  .S-heading
+  {
+
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #8c65b3;
+    font-family: 'Comfortaa', cursive !important;
+
+  }
+
+  .purple 
+  {
+
+    color: #804DB3;
+    font-size: 15px;
+
+  }
