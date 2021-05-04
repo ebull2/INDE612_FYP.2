@@ -1,6 +1,37 @@
 
 const puppeteer = require('puppeteer');
-const mongoose = require('mongoose')
+const mongo = require('./mongo');
+const express = require('express')
+const app = express();
+const cryptoPricesSchema = require('./schemas/user-schema');
+const { request } = require('http');
+const Joi = require('joi');
+const port = 3005;
+
+
+
+
+
+app.listen(port, () => {
+    console.log('App listening at http://localhost:3000')
+  })
+
+
+
+
+// const cryptoPricesSchema = mongoose.Schema ({
+
+
+//     bitCoinPrice: { type: String, required: true },
+//     ethereumCoinPrice: { type: String, required: true },
+//     rippleCoinPrice: { type: String, required: true }
+  
+//   });
+  
+
+
+
+
 
 async function scrapeAddress(url) {
 
@@ -44,6 +75,7 @@ async function scrapeAddress(url) {
     const XRPvolume = await txt6.jsonValue();
 
 
+
     //*[@id="market-table"]/tbody/tr[7]/td[5]/a
 
     //having problems with finding websites that have correct Xpath to use.
@@ -64,20 +96,49 @@ async function scrapeAddress(url) {
         ETHvolume,
         XRPvolume 
         
+        
     };
 
 
+    const connectToMongoDB = async () => {
+
+        await mongo().then (async (mongoose) => {
+        
+            try {
+                console.log('Connected To MongoDB!')
+
+                const cryptoData = {
+
+                    bitCoinPrice: cryptoPrices.BTCprice,
+                    ethereumCoinPrice: cryptoPrices.ETHprice,
+                    rippleCoinPrice:  cryptoPrices.XRPprice,
+                    
+                    
+                }
+        
+                await new cryptoPricesSchema(cryptoData).save()
+        
+            } finally {
+                mongoose.connection.close()
+            }
+        })
+        }
+        connectToMongoDB()
+  
 
     const data = JSON.stringify(cryptoPrices, null, 4 );
     
     fs.writeFileSync('server/data.json', data,);
+    
 
     console.log({BTCprice, ETHprice, XRPprice, BTCvolume, ETHvolume, XRPvolume });
 
 
     return {BTCprice, ETHprice, XRPprice, BTCvolume, ETHvolume, XRPvolume }
 
-}
+
+        }
+
 
 
 module.exports = { 
@@ -85,8 +146,11 @@ module.exports = {
     scrapeAddress
 }
 
+
+
 scrapeAddress('https://www.cryptocurrencymarket.uk/',);
+ 
 
 
-// https://prices.org/
+
 

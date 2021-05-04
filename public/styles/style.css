@@ -416,12 +416,13 @@ margin-left: 80px;
   #BigSeparator {
     width:100%;
     height:4px;
-    background-color:#a3a3a3a4;
+    background-color:#c6b4d8;
     text-decoration: dashed;
     opacity: 80%;
     margin-top:6px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     float:left;
+    border-radius: 20px;
     }
 
 
