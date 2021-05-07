@@ -1,9 +1,41 @@
 
 
+
+
 body {
 
     margin: 0px;
     padding: 0px;
+    color: var(--color-4);
+}
+
+
+body[data-theme="light"] {
+  --color-1: #727272;
+  --color-2: white;
+  --color-3: white;
+  --color-4: rgb(80, 82, 110);
+  --color-5: #8b62b4;
+  --box-shadow-1: 
+  -2px 8px 12px 0 rgba(0, 0, 0, 0.1),
+  12px -12px 16px rgba(255, 255, 255, 0.25);
+  --box-shadow-2: 
+  2px 8px 12px 0 rgba(0, 0, 0, 0.1),
+  -12px 12px 12px rgba(255, 255, 255, 0.25);
+}
+
+body[data-theme="dark"] {
+  --color-1: #b4b4b4;
+  --color-2: #303030;
+  --color-3: rgb(43, 43, 43);
+  --color-4: rgb(186, 186, 202);
+  --color-5: #625d68;
+  --box-shadow-1: 
+  -2px 8px 12px 0 rgba(0, 0, 0, 0.1),
+  12px -12px 20px rgba(34, 34, 34, 0.055);
+  --box-shadow-2: 
+  8px 8px 12px 0 rgba(0, 0, 0, 0.1),
+  -12px 12px 16px rgba(34, 34, 34, 0.055);
 }
 
 
@@ -24,7 +56,7 @@ body {
 .p {
 
     font-size: 0.5em !important; 
-    color:  #a3a3a3 !important;
+    color: var(--color-1) !important;
     font-family: 'Comfortaa', cursive !important
 
 }
@@ -52,8 +84,85 @@ a:active {
   color: #9672b9;
 }
 
+section {
+  background-color: var(--color-3);
+  width: 100%;
+  height: 1200px ;
+}
+
+button {
+  font-family: FontAwseome;
+  content: "\f186";
+  padding: 10px 30px;
+  border: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.theme-switcher {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+input {
+  width: 0;
+  height: 0;
+  display: none;
+  visibility: hidden;
+}
+
+
+label {
+  cursor: pointer;
+  display: block;
+  text-indent: -9999px;
+  height: 35px;
+  width: 60px;
+  border-radius: 50px;
+  border: 3px !important;
+  border-color: black !important;
+
+  background-color: #EAECEF;
+  transition: 1s ease background-color;
+}
+
+label::after {
+  position: absolute;
+  content: "";
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  top: 40%;
+  left: 2;
+  transform: translateY(-40%);
+  background-color: rgb(54, 54, 54);
+  transition: 1 ease; 
+  
+}
+
+
+input:checked + label::after {
+  /* left: calc(100% - 2.5px); */
+  left: calc(100% - 36px);
+  background-color: rgb(218, 218, 218);
+}
+
+
+input:checked + label {
+  background-color: rgb(56, 56, 56);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+
+
+
 .container {
-    background-color: white !important;
+    
     margin-left: 0px;
     
 }
@@ -76,32 +185,63 @@ a:active {
     height: 330px;
     width: 250px;
     display: inline-block;
-    background-color: white !important;
+    background-color: var(--color-3);
     border-radius: 55px;
     border: 0px;
     border-color: rgba(187, 187, 187, 0.281);
-    background: linear-gradient(-45deg, rgba(233, 233, 233, 0.22), rgba(255,255,255,0.25));
-    box-shadow:
-    -8px 8px 12px 0 rgba(0, 0, 0, 0.1),
-    12px -12px 16px rgba(255, 255, 255, 0.25);
+    box-shadow: var(--box-shadow-1);
     transition: width 1s, height 2s;
 
 }
 
 
- .card:hover {
+.card:hover {
 
-    width: 280px;
-    height: 380px;
-    box-shadow:
-    8px 8px -12px 0 rgba(0, 0, 0, 0.1),
-    5px -18px 4px rgba(255, 255, 255, 0.25);
-    
+  width: 255px;
+  height: 380px;
+  box-shadow:
+  8px 8px -12px 0 rgba(0, 0, 0, 0.1),
+  5px -18px 4px rgba(255, 255, 255, 0.25);
+  
+}
+
+
+.card2 {
+  margin: 20px;
+  margin-left: 30px;
+  padding: 20px;
+  height: 330px;
+  width: 600px;
+  display: inline-block;
+  background-color: var(--color-3);
+  border-radius: 55px;
+  border: 0px;
+  border-color: rgba(187, 187, 187, 0.281);
+  box-shadow: var(--box-shadow-1);
+
+}
+
+@media screen and (max-width: 700px) {
+  .card2 {
+
+      width: 250px;
   }
+
+  .tradingView-Chart{
+
+    display: hide;
+
+  }
+}
+
+
+
+
+
 
 .BTC-h { 
     margin-top: 20px;
-    color: #a8a8a8;
+    color: var(--color-5);
     font-size: 2em;
     font-family: 'Comfortaa', cursive    
 
@@ -110,7 +250,7 @@ a:active {
 
 .ETH-h { 
     margin-top: 10px;
-    color: #a8a8a8;
+    color: var(--color-5);
     font-size: 2em;
     font-family: 'Comfortaa', cursive    
 
@@ -119,7 +259,7 @@ a:active {
 
 .XRP-h { 
     margin-top: 10px;
-    color: #a8a8a8;
+    color: var(--color-5);
     font-size: 2em;
     font-family: 'Comfortaa', cursive    
 
@@ -130,7 +270,7 @@ a:active {
 {
     margin-top: 10px;
     font-size: 0.8em !important; 
-    color:  #5e5e5e !important;
+    color: var(--color-1);
     font-family: 'Comfortaa', cursive !important
 
 }
@@ -173,7 +313,7 @@ a:active {
 
 
 
-.chart 
+.chart-h
 
 {
     margin-left: 20px;
@@ -202,7 +342,7 @@ a:active {
 
     margin-top:10px;
     margin-left: 50px;
-    color: #727272;
+    color: var(--color-1);
     font-size: 1.2em;
     font-family: 'Questrial', sans-serif !important;
     line-height: 1.65em;
@@ -228,7 +368,7 @@ margin-left: 80px;
 #cryptoTitle, #cryptoTitle2, #cryptoTitle3, #cryptoTitle4
 {
     
-    color: #727272;
+    color: var(--color-1);
     font-size: 1.05em;
     font-family: 'Questrial', sans-serif !important;
     line-height: 1.55em;
@@ -362,27 +502,39 @@ margin-left: 80px;
     margin-top: 30px;
     color: #804DB3;
     font-family: 'Comfortaa', cursive !important;
+    padding-bottom: 10px;
+;
+  }
 
-   }
 
 
    .card-body{
     
     margin: 40px;
     padding: 40px;
-    display: inline-block;
-    background-color: white !important;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     border-radius: 55px;
     border: 0px;
-    border-color: rgba(187, 187, 187, 0.281);
-    background: linear-gradient(-45deg, rgba(233, 233, 233, 0.22), rgba(255,255,255,0.25));
-    box-shadow:
-    -8px 8px 12px 0 rgba(0, 0, 0, 0.1),
-    12px -12px 16px rgba(255, 255, 255, 0.25);
+    background-color: var(--color-2);
+    box-shadow: var(--box-shadow-1);
     transition: width 1s, height 2s;
     font-family: 'Questrial', sans-serif !important;
     font-size: 1.2em !important; 
-    color: #727272;
+    color: var(--color-1);
+}
+
+
+ @media only screen and (max-width:  700px) 
+{
+.card-body {
+
+  margin: 10px;
+
+
+}
+
 }
 
 .socials
@@ -484,18 +636,14 @@ margin-left: 80px;
     margin: 40px;
     padding: 40px;
     display: inline-block;
-    background-color: white !important;
+    background-color: var(--color-2);
     border-radius: 55px;
     border: 0px;
-    border-color: rgba(187, 187, 187, 0.281);
-    background: linear-gradient(-45deg, rgba(233, 233, 233, 0.22), rgba(255,255,255,0.25));
-    box-shadow:
-    6px 8px 10px 6px rgba(0, 0, 0, 0.1),
-    8px -12px 12px rgba(255, 255, 255, 0.25);
+    box-shadow: var(--box-shadow-2);
     transition: width 1s, height 2s;
     font-family: 'Questrial', sans-serif !important;
     font-size: 1.2em !important; 
-    color: #727272;
+    color: var(--color-1);
 
 
   }
@@ -514,7 +662,15 @@ margin-left: 80px;
   .purple 
   {
 
-    color: #804DB3;
+    color: #906ab6;
     font-size: 15px;
+    font-weight: bold;
 
+  }
+
+
+
+  #particle-canvas {
+    width: 100%;
+    height: 100%;
   }

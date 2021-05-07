@@ -5,29 +5,7 @@ const express = require('express')
 const app = express();
 const cryptoPricesSchema = require('./schemas/user-schema');
 const { request } = require('http');
-const Joi = require('joi');
 const port = 3005;
-
-
-
-
-
-app.listen(port, () => {
-    console.log('App listening at http://localhost:3000')
-  })
-
-
-
-
-// const cryptoPricesSchema = mongoose.Schema ({
-
-
-//     bitCoinPrice: { type: String, required: true },
-//     ethereumCoinPrice: { type: String, required: true },
-//     rippleCoinPrice: { type: String, required: true }
-  
-//   });
-  
 
 
 
@@ -52,8 +30,8 @@ async function scrapeAddress(url) {
     const txt2 = await el2.getProperty('textContent');
     const  ETHprice = await txt2.jsonValue();
 
-    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[4]/td[2]/a');
-    const [el3]= await page.$x('//*[@id="market-table"]/tbody/tr[4]/td[2]/a');
+    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[5]/td[2]/a');
+    const [el3]= await page.$x('//*[@id="market-table"]/tbody/tr[5]/td[2]/a');
     const txt3 = await el3.getProperty('textContent');
     const  XRPprice = await txt3.jsonValue();
 
@@ -112,7 +90,8 @@ async function scrapeAddress(url) {
                     bitCoinPrice: cryptoPrices.BTCprice,
                     ethereumCoinPrice: cryptoPrices.ETHprice,
                     rippleCoinPrice:  cryptoPrices.XRPprice,
-                    
+
+
                     
                 }
         
@@ -149,6 +128,11 @@ module.exports = {
 
 
 scrapeAddress('https://www.cryptocurrencymarket.uk/',);
+
+app.listen(port, () => {
+    console.log('App listening at http://localhost:3000')
+  })
+
  
 
 

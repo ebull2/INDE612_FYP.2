@@ -15,13 +15,15 @@ npm install  nodemon puppeteer mongoose express body-parser bcryptjs jsonwebtoke
 In terminal - 
 
 
-nodemon server/scrapers.js     
+node server/scrapers.js     
 
-nodemon server/CryptoNews-scraper.js
+node server/CryptoNews-scraper.js
+
+node server/exchanges-scraper.js
 
 # Unify 
 
-![main-logo](public/assets/main-logo.pngs)
+![main-logo](public/assets/new-logoWtxt.png)
 
 A place to learn  crypto lightly.
 
