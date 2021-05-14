@@ -40,7 +40,7 @@
         </span>
 
         <div class="text-center logo-icon">
-        <img src="assets/final-logo.png" width=50px>
+        <a href="index.html"><img src="assets/final-logo.png" width=50px></a>
         </div>
 
 
@@ -76,7 +76,7 @@
          
          <!-- REMEMBER TO CODE OUT DOCUMENTATION -->
 
-            <div class="col-xl-4 col-xs-2 align-items-end">
+            <div class="col-xl-5 col-xs-2 align-items-end">
                 <div class="card2">
                     <h1 class="chart-h">Chart</h1>
                     
@@ -102,7 +102,7 @@
                         "toolbar_bg": "transparent",
                         "background-color": "transparent",
                         "line-color": "black",
-                        "hide_legend": true,
+                        "hide_legend": false,
                         "enable_publishing": false,
                         "allow_symbol_change": true,
                         "show_popup_button": true,
@@ -113,9 +113,16 @@
                     }
                         );
                         </script>
-                    </div>
-                    <!-- TradingView Widget END -->
-                    </div>
+                    </div> 
+
+
+                    <!-- //TradingView Widget END -->
+                    
+                    <!-- <div id="prices-Chart"></div> -->
+
+
+
+                    </div> 
                 </div>
                 </div>    
 
@@ -178,9 +185,29 @@
            </div>
 
 
+           
+           <div class="container-fluid">
+           <div class="col-xl-6 col-xs-6">
+           <div class="card-body text-center">
+               <div class="heading text-center">
+               <img src="assets/twitter.logo.png" style="width: 100px">
+               <h1 class="text-center title2">Crypto Tweet Feed</h1>
+               </div>
+               
+               <div class="mt-4">
+                   <div class="feed">
+               <div id="name" class="mb-3"></div>
+               <div id="tweet1" class="mb-3 "></div>
+               <div id="tweet2" class="mb-3"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
 
 
 
+        <br><br><br>
      
     </section>
 
@@ -194,6 +221,10 @@
 
 
 <script>
+
+
+
+
 
   
 
@@ -234,13 +265,7 @@
             document.querySelector("#cryptoTitle4").innerText = news.newsTitle4
             document.querySelector("#cryptoSrc4").innerText = news.newsSrc4
 
-            //     var newsImg = '';
-            //     for( var i = 0; i < newsImg.length; ++i ) {
-            //     newsImg += '<img src="' + newsImg[i]['image_path'] + newsImg[i]['image_nm'] + '" />';
-            //     }
-
-            // document.querySelector("#cryptoImg").innerHTML = news.newsImg;
-
+        
             
         }).catch(err => {
         // code to handle request errors
@@ -248,45 +273,30 @@
     });
 
 
-    var xmlhttp =  new XMLHttpRequest();
-    var url = "http://127.0.0.1:5500/server/news-data.json";
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-    xmlhttp.onreadystatechange = function() {
 
-        if(this.readState == 4 && this.stateus == 200){
+    fetch('/server/tweets.json')
+        .then(response => response.json())
+        .then(tweetBot => {
 
-            const pricesData = JSON.parse(this.responseText);
-            console.log(pricesData)
+            console.log(tweetBot)
+            document.querySelector("#tweet1").innerText = tweetBot.text
+            document.querySelector("#tweet2").innerText = tweetBot.created_at
+        });
 
-            const BTCdata = pricesData.cryptoPrices(function(elem){
-                return elem.BTCprice;
-            });
-            // console.log(BTCdata)
-
-            const ETHdata = pricesData.cryptoPrices(function(elem){
-                return elem.ETHprice;
-            });
-            // console.log(ETHdata)
-            const XRPdata = pricesData.cryptoPrices(function(elem){
-                return elem.XRPprice;
-            });
-            // console.log(XRPdata)
-        }
-
-    }
 
 
     
 
 function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "380px";
         }
 
         function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         }
 
+
+    
 
 
 //         function getData() {
@@ -317,7 +327,11 @@ function openNav() {
 
 <script src="script.js"></script>
 
+<script src="https://d3js.org/d3.v6.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>

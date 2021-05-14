@@ -7,6 +7,7 @@ body {
     margin: 0px;
     padding: 0px;
     color: var(--color-4);
+    height: auto;
 }
 
 
@@ -22,6 +23,7 @@ body[data-theme="light"] {
   --box-shadow-2: 
   2px 8px 12px 0 rgba(0, 0, 0, 0.1),
   -12px 12px 12px rgba(255, 255, 255, 0.25);
+  --background-color-1: "light";
 }
 
 body[data-theme="dark"] {
@@ -36,6 +38,7 @@ body[data-theme="dark"] {
   --box-shadow-2: 
   8px 8px 12px 0 rgba(0, 0, 0, 0.1),
   -12px 12px 16px rgba(34, 34, 34, 0.055);
+  --background-color-2: "light";
 }
 
 
@@ -87,7 +90,7 @@ a:active {
 section {
   background-color: var(--color-3);
   width: 100%;
-  height: 1200px ;
+  height: 250% ;
 }
 
 button {
@@ -227,11 +230,17 @@ input:checked + label {
       width: 250px;
   }
 
-  .tradingView-Chart{
+  .card-body {
 
-    display: hide;
+    width: 250px;
 
   }
+
+.card3 {
+
+  width: 300px;
+}
+
 }
 
 
@@ -337,6 +346,36 @@ input:checked + label {
 
 }
 
+
+.title2
+{
+
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #804DB3;
+    font-size: 2em;
+    font-family: 'Comfortaa', cursive
+
+}
+
+
+.feed 
+{
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
+.tweet-feed
+{
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+
+}
+
 .Intro
 {
 
@@ -389,7 +428,7 @@ margin-left: 80px;
 
 .sidenav {
     height: 100%;
-    width: 0px;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -422,6 +461,7 @@ margin-left: 80px;
     font-size: 36px;
     margin-left: 50px;
   }
+
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -601,9 +641,8 @@ margin-left: 80px;
 
   margin-top: 10px;
   margin-left: auto;
-  margin-right: 330px;
+  margin-right: auto;
   font-size: 14px;
-  display: inline-block;
   border-radius: 10px;
   width: 40px;
   height: 25px;
@@ -612,6 +651,17 @@ margin-left: 80px;
   color: rgb(255, 255, 255);
   background-color: #804DB3;
 
+
+  }
+
+
+  #volume1,  #volume2,  #volume3,  #volume4,  #volume5,  #volume6,  #volume7,  #volume8,  #volume9,  #volume10 {
+
+
+
+    color: #80b34d;
+    font-size: 0.8em;
+    font-family: 'Comfortaa', cursive
 
   }
 
@@ -645,9 +695,24 @@ margin-left: 80px;
     font-size: 1.2em !important; 
     color: var(--color-1);
 
-
   }
 
+  .card3 {
+
+
+    margin: 40px;
+    padding: 40px;
+    margin-bottom: 50px;
+    background-color: var(--color-2);
+    border-radius: 55px;
+    border: 0px;
+    box-shadow: var(--box-shadow-2);
+    transition: width 1s, height 2s;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 1.2em !important; 
+    color: var(--color-1);
+
+  }
 
   .S-heading
   {
@@ -669,8 +734,3 @@ margin-left: 80px;
   }
 
 
-
-  #particle-canvas {
-    width: 100%;
-    height: 100%;
-  }

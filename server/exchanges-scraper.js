@@ -114,27 +114,58 @@ async function scrapeAddress3(url) {
     const [el20]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[10]/td[3]/div/div');
     const txt20 = await el20.getProperty('textContent');
     const rating10= await txt20.jsonValue();
-
-
-
-
-
-
-
-
-
     
 
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[1]/td[4]/text()');
+    const [el22]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[1]/td[4]/text()');
+    const txt22 = await el22.getProperty('textContent');
+    const Volume1 = await txt22.jsonValue();
+
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[2]/td[4]/text()');
+    const [el23]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[2]/td[4]/text()');
+    const txt23 = await el23.getProperty('textContent');
+    const Volume2 = await txt23.jsonValue();
+
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[3]/td[4]/text()');
+    const [el24]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[3]/td[4]/text()');
+    const txt24 = await el24.getProperty('textContent');
+    const Volume3 = await txt24.jsonValue();
 
 
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[4]/td[4]/text()');
+    const [el25]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[4]/td[4]/text()');
+    const txt25 = await el25.getProperty('textContent');
+    const Volume4 = await txt25.jsonValue();
+
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[5]/td[4]/text()');
+    const [el26]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[5]/td[4]/text()');
+    const txt26 = await el26.getProperty('textContent');
+    const Volume5 = await txt26.jsonValue();
+
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[6]/td[4]/text()');
+    const [el27]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[6]/td[4]/text()');
+    const txt27 = await el27.getProperty('textContent');
+    const Volume6 = await txt27.jsonValue();
+
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[7]/td[4]/text()');
+    const [el28]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[7]/td[4]/text()');
+    const txt28 = await el28.getProperty('textContent');
+    const Volume7 = await txt28.jsonValue();
     
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[8]/td[4]/text()');
+    const [el29]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[8]/td[4]/text()');
+    const txt29 = await el29.getProperty('textContent');
+    const Volume8 = await txt29.jsonValue();
 
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[9]/td[4]/text()');
+    const [el30]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[9]/td[4]/text()');
+    const txt30 = await el30.getProperty('textContent');
+    const Volume9 = await txt30.jsonValue();
 
-
-
-
-    
-
+    await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[10]/td[4]/text()');
+    const [el31]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[10]/td[4]/text()');
+    const txt31 = await el31.getProperty('textContent');
+    const Volume10 = await txt31.jsonValue();
 
 
 
@@ -167,11 +198,17 @@ async function scrapeAddress3(url) {
         rating7,
         rating8,
         rating9,
-        rating10
-
-
-
-       
+        rating10,
+        Volume1,
+        Volume2,
+        Volume3,
+        Volume4,
+        Volume5,
+        Volume6,
+        Volume7,
+        Volume8,
+        Volume9,
+        Volume10
 
 
     };
@@ -183,12 +220,12 @@ async function scrapeAddress3(url) {
 
     console.log({ exchange1, exchange2, exchange3, exchange4, exchange5, exchange6, exchange7, exchange8, exchange9, exchange10, rating1, rating2, rating3, rating4, rating5,
 
-        rating6, rating7, rating8, rating9, rating10 });
+        rating6, rating7, rating8, rating9, rating10, Volume1, Volume2, Volume3, Volume4, Volume5, Volume6, Volume6, Volume7, Volume8,Volume9, Volume10  });
 
 
     return { exchange1, exchange2, exchange3, exchange4, exchange5, exchange6, exchange7, exchange8, exchange9, exchange10, rating1, rating2, rating3, rating4, rating5,
 
-        rating6, rating7, rating8, rating9, rating10}
+        rating6, rating7, rating8, rating9, rating10, Volume1, Volume2, Volume3, Volume4, Volume5, Volume6, Volume6, Volume7, Volume8,Volume9, Volume10 }
 
 }
 

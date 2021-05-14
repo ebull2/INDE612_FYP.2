@@ -30,8 +30,8 @@ async function scrapeAddress(url) {
     const txt2 = await el2.getProperty('textContent');
     const  ETHprice = await txt2.jsonValue();
 
-    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[5]/td[2]/a');
-    const [el3]= await page.$x('//*[@id="market-table"]/tbody/tr[5]/td[2]/a');
+    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[4]/td[2]/a');
+    const [el3]= await page.$x('//*[@id="market-table"]/tbody/tr[4]/td[2]/a');
     const txt3 = await el3.getProperty('textContent');
     const  XRPprice = await txt3.jsonValue();
 
@@ -47,8 +47,8 @@ async function scrapeAddress(url) {
     const txt5 = await el5.getProperty('textContent');
     const ETHvolume = await txt5.jsonValue();
 
-    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[7]/td[5]/a');
-    const [el6]= await page.$x('//*[@id="market-table"]/tbody/tr[7]/td[5]/a');
+    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[4]/td[5]/a');
+    const [el6]= await page.$x('//*[@id="market-table"]/tbody/tr[4]/td[5]/a');
     const txt6 = await el6.getProperty('textContent');
     const XRPvolume = await txt6.jsonValue();
 
@@ -72,11 +72,12 @@ async function scrapeAddress(url) {
         XRPprice,
         BTCvolume,
         ETHvolume,
-        XRPvolume 
-        
+        XRPvolume, 
+
         
     };
 
+   
 
     const connectToMongoDB = async () => {
 
@@ -90,7 +91,6 @@ async function scrapeAddress(url) {
                     bitCoinPrice: cryptoPrices.BTCprice,
                     ethereumCoinPrice: cryptoPrices.ETHprice,
                     rippleCoinPrice:  cryptoPrices.XRPprice,
-
 
                     
                 }
@@ -113,7 +113,7 @@ async function scrapeAddress(url) {
     console.log({BTCprice, ETHprice, XRPprice, BTCvolume, ETHvolume, XRPvolume });
 
 
-    return {BTCprice, ETHprice, XRPprice, BTCvolume, ETHvolume, XRPvolume }
+    return {BTCprice, ETHprice, XRPprice, BTCvolume, ETHvolume, XRPvolume,  }
 
 
         }
