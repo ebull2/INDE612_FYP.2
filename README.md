@@ -10,7 +10,7 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
 ### To install all dependencies, do:
 
-npm install  nodemon puppeteer mongoose express body-parser twit
+npm install  nodemon puppeteer mongoose express body-parser buffer-shims twit
 
 
 ## TO RUN:
