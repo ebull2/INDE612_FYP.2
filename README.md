@@ -29,7 +29,7 @@ node server/bot.js
 
 # Unify 
 
-A place to learn  crypto lightly.
+A place to learn  crypto lightly. <br>
 Twitter: https://twitter.com/unify_crypto
 
 
