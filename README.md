@@ -1,3 +1,6 @@
+
+<img src="public/assets/new-logoWtxt.png" width="200" />
+
 # INDE612_FYP
 
 ## **Final Year Project**
@@ -23,10 +26,10 @@ node server/exchanges-scraper.js
 
 node server/bot.js
 
+
 # Unify 
 
-<img src="public/assets/new-logoWtxt.png" width="200" />
-
 A place to learn  crypto lightly.
+Twitter: <a href-"https://twitter.com/unify_crypto></a>
 
 
