@@ -5,6 +5,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
+
 const monogpath = 'mongodb+srv://Ethan-admin:Andoer-44@clusterinde612.v71fr.mongodb.net/CryptoPricesDB'
 
 
@@ -20,6 +21,10 @@ module.exports = async () => {
   return mongoose
 
 }
+
+
+
+
 
 
 
