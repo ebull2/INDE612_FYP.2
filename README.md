@@ -21,9 +21,11 @@ node server/CryptoNews-scraper.js
 
 node server/exchanges-scraper.js
 
+node server/bot.js
+
 # Unify 
 
-![main-logo](public/assets/new-logoWtxt.png)
+![main-logo](public/assets/new-logoWtxt.png) {:width="320px"}
 
 A place to learn  crypto lightly.
 

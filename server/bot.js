@@ -14,12 +14,15 @@ console.log('Bot is Live')
 var T = new Twit(config);
 
 
-var tweet = {
 
-  status: 'hello @kieranbrown, this is bot tweeting'
-}
+// //POST TWEETS
 
-// //
+// var tweet = {
+
+//   status: 'Whats everyones Favourite #cryptocurrency today?'
+// }
+
+
 // //  tweet 'hello world!'
 // //
 // T.post('statuses/update', tweet , tweeted);
@@ -32,7 +35,20 @@ var tweet = {
 //   console.log("It worked!");
 //  }  
 // }
-//  search twitter for all tweets containing the word 'banana' since July 11, 2011
+
+
+
+
+// //  search twitter for all tweets containing the word 'banana' since July 11, 2011
+
+
+
+
+
+
+
+// Collect tweets
+
 
 T.get('search/tweets', { q: 'Crypto News', count: 2 }, function(err, data, response) {
 
@@ -49,7 +65,6 @@ T.get('search/tweets', { q: 'Crypto News', count: 2 }, function(err, data, respo
     console.log(tweets[i].text);
 
     return (tweets[i].text) 
-
 
   }
 });

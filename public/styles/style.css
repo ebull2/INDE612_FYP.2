@@ -222,7 +222,10 @@ input:checked + label {
   border-color: rgba(187, 187, 187, 0.281);
   box-shadow: var(--box-shadow-1);
 
+
 }
+
+
 
 @media screen and (max-width: 700px) {
   .card2 {
@@ -274,7 +277,7 @@ input:checked + label {
 
 
 }
-
+f
 .volume 
 {
     margin-top: 10px;
@@ -566,6 +569,27 @@ margin-left: 80px;
 }
 
 
+.card-body2{
+    
+  margin: 40px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border-radius: 55px;
+  border: 0px;
+  background-color: var(--color-2);
+  box-shadow: var(--box-shadow-1);
+  transition: width 1s, height 2s;
+  font-family: 'Questrial', sans-serif !important;
+  font-size: 1.2em !important; 
+  color: var(--color-1);
+
+  }
+
+
+
+
  @media only screen and (max-width:  700px) 
 {
 .card-body {
@@ -734,3 +758,77 @@ margin-left: 80px;
   }
 
 
+  .timeline-Footer {
+
+    visibility: hidden !important;
+  }
+
+  .card4 {
+
+
+    margin: 40px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: var(--color-2);
+    border-radius: 55px;
+    border: 0px;
+    box-shadow: var(--box-shadow-2);
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 1.2em !important; 
+    color: var(--color-1);
+
+  }
+
+  .feed {
+
+    justify-content: center;
+
+  }
+
+  #tweetName, #tweetLocation, #tweetDate 
+  {
+
+    color: #906ab6;
+
+  }
+
+  @media (min-width: 1200px)
+  {
+.col-xl-10 {
+
+  max-width: 100% !important;
+}
+  }
+
+  .footer {
+
+    background-color: #7c52a1;
+    color: #dddddd;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 1.1em;
+  }
+
+
+.f-h
+{
+
+  padding-bottom: 5px;
+  color: white;
+  font-size: 1em;
+  font-family: 'Comfortaa', cursive !important;
+  /* border-bottom: 2px  solid #bbb ; */
+  border-radius: 2px;
+
+
+  
+
+
+
+}
+
+
+  html.theme-dark .tv-ticker-item-last__short-name {
+    color: #4f526e !important;
+}
