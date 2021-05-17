@@ -30,6 +30,6 @@ node server/bot.js
 # Unify 
 
 A place to learn  crypto lightly.
-Twitter: <a href-"https://twitter.com/unify_crypto></a>
+Twitter: <a href="https://twitter.com/unify_crypto></a>
 
 
