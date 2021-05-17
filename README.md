@@ -25,7 +25,7 @@ node server/bot.js
 
 # Unify 
 
-![main-logo](public/assets/new-logoWtxt.png) {:width="320px"}
+![main-logo] {:width="320px"}(public/assets/new-logoWtxt.png) 
 
 A place to learn  crypto lightly.
 
