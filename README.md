@@ -1,5 +1,5 @@
 
-<img src="public/assets/new-logoWtxt.png" width="200" />
+<img src="public/assets/new-logoWtxt.png" width="200" style="align-items:center" />
 
 # INDE612_FYP
 
