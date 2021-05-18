@@ -26,8 +26,7 @@ node server/exchanges-scraper.js
 
 node server/bot.js
 
-
-![main-logo] {:width="320px"}(public/assets/new-logoWtxt.png) 
+## UNIFY
 
 A place to learn  crypto lightly. <br>
 Twitter: https://twitter.com/unify_crypto
