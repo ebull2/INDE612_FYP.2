@@ -24,7 +24,7 @@
 
     <section>
 
-      
+
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -33,6 +33,8 @@
             <a href="about.html">ABOUT</a>
     
           </div>
+
+         
     
           <span style="font-size:30px;cursor:pointer;margin-left:50px;" class="nav-icon toggleable" onclick="openNav()">
     
@@ -42,11 +44,33 @@
         <div class="text-center logo-icon">
         <a href="index.html"><img src="assets/final-logo.png" width=50px></a>
         </div>
+        
+
+        <div class="container">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            
+            <div class="modal-body text-center">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5>FOLLOW OUR TWITTER PAGE FOR LATEST UPDATES ON CRYPTOCURENCY</h5>
+              <a href="https://twitter.com/unify_crypto" target="_blank"><img src="assets/twitter.logo.png" class="text-center" style="width:80px"></a>
+			  </br><br>
+        <p>Please make sure to turn on notifications to be updated </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
         <div class="container-fluid mt-2">
            <div class="row">
-         <div class="col col-xl-7 align-items-start">
+         <div class="col-xl-7 align-items-start">
         
         <div class="card text-center bitcoin">
 
@@ -82,44 +106,6 @@
                     
                     <div class="tradingView-Chart">
 
-                                    <!-- TradingView Widget BEGIN -->
-                    <!-- <div class="tradingview-widget-container mt-2">
-                        <div id="tradingview_f6b7d"></div>
-                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCGBP/?exchange=BINANCE" rel="noopener" target="_blank"><p>Search any CryptoCurrency where "BTCGBP" on the left hand of the chart is</p></a></div>
-                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                        <script type="text/javascript">
-                        new TradingView.widget(
-                        {
-
-                        "height": 180,
-                        "width": 500,
-                        "symbol": "BINANCE:BTCGBP",
-                        "interval": "D",
-                        "timezone": "Etc/UTC",
-                        "theme": "light",
-                        "style": "3",
-                        "locale": "en",
-                        "toolbar_bg": "transparent",
-                        "background-color": "transparent",
-                        "line-color": "black",
-                        "hide_legend": false,
-                        "enable_publishing": false,
-                        "allow_symbol_change": true,
-                        "show_popup_button": true,
-
-                        "popup_width": "1500",
-                        "popup_height": "800",
-
-                    }
-                        );
-                        </script>
-                    </div> 
- -->
-
-                    <!-- //TradingView Widget END -->
-                    
-                    <!-- <div id="prices-Chart"></div> -->
-
                     <!-- TradingView Widget BEGIN -->
                     <div class="mt-5">
                   <div class="tradingview-widget-container">
@@ -143,10 +129,7 @@
                     </script>
                   </div>
                 </div>
-<!-- TradingView Widget END -->
-
-
-
+                <!-- TradingView Widget END -->
                     </div> 
                 </div>
                 </div>    
@@ -159,21 +142,20 @@
         <div class="container-fluid">
         <div class="row">
             <div class="col-xl-7 col-xs-2 mt-2">
-
-            <div class="title">
-            <h1>What Is CryptoCurrency?</h1> 
+              
+            <div class="col-xl-8  col-xs-2 ">
+            <h1 class="title" >What Is CryptoCurrency?</h1> 
             </div>
-
-            <div class="Intro">
-            <br><p>Cryptocurrency can be described as a type of currency that uses digital files as money. One thing to be made clear is that one person or any government doesn’t control cryptocurrency because the first Cryptocurrencies were made to be independent of government issued currencies.
+            
+            <div class="col-xl-12 col-xs-2">
+            <br><p class="Intro">Cryptocurrency can be described as a type of currency that uses digital files as money. One thing to be made clear is that one person or any government doesn’t control cryptocurrency because the first Cryptocurrencies were made to be independent of government issued currencies.
                 <br><br>
                 It uses decentralized control, unlike “traditional” currencies. The more significant advantage is that cryptocurrency transfers are secure, anonymous, and transparent.
                 <br>
                 Presently, there are more than 4000 existing cryptocurrencies, and most of it based on blockchain technology, but we will list out three of them.
                  </p>
-
-                 <p>
-                    <b>For a more visual understanding see this short simple explaination on what cryptoCurrency is:</b>
+                 <p class="Intro">
+                   <b>For a more visual understanding see this short simple explaination on what cryptoCurrency is:</b> 
                      <a href="https://www.youtube.com/watch?v=6Gu2QMTAkEU" target="_blank"><b> What is Cryptocurrency? A Simple Explanation </b> </a>
                 </p>
             </div>
@@ -181,7 +163,7 @@
            </div>
 
 
-        <div class="col-xl-5 mt-5">
+        <div class="col-xl-5 col-xs-2 mt-5">
             <div class="news">
                 <h1 class="newsH">TOP CRYPTO NEWS</h1>
 
@@ -202,8 +184,6 @@
 
                 <div class="mt-2" id="cryptoSrc4"></div>  
 
-
-
                 </div>    
                </div>
             </div>
@@ -211,8 +191,8 @@
 
 
            
-           <div class="container-fluid w-50 ">
-           <div class="col-xl-10 col-xs-8">
+           <div class="container-fluid">
+           <div class="col-xl-10 col-xs-4">
             
            <div class="card4 text-center  mt-5">
                <div class="heading text-center">
@@ -241,17 +221,7 @@
         </div>
     </div>
 
-
-        <!-- <div class="col-xl-6 align-items-end">
-            
-        <div class="card-body2">
-        <a class="twitter-timeline" data-height="380px" href="https://twitter.com/unify_crypto?ref_src=twsrc%5Etfw">Tweets by unify_crypto</a> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </div>
-   </div> -->
    
-    
 
 
 
@@ -371,8 +341,11 @@
 
 
 
+$(window).load(function(){
+        $('#myModal').modal('show');
+    });
 
-
+    
   
 
     fetch('/server/data.json')

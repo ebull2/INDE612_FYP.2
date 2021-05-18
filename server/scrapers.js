@@ -4,10 +4,6 @@ const mongo = require('./mongo');
 const express = require('express')
 const app = express();
 const cryptoPricesSchema = require('./schemas/user-schema');
-const { request } = require('http');
-const port = 3005;
-
-
 
 
 
@@ -105,9 +101,11 @@ async function scrapeAddress(url) {
         connectToMongoDB()
   
 
+
+
     const data = JSON.stringify(cryptoPrices, null, 4 );
     
-    fs.writeFileSync('server/data.json', data,);
+    fs.writeFileSync('data.json', data,);
     
 
     console.log({BTCprice, ETHprice, XRPprice, BTCvolume, ETHvolume, XRPvolume });
@@ -119,7 +117,6 @@ async function scrapeAddress(url) {
         }
 
 
-
 module.exports = { 
 
     scrapeAddress
@@ -129,9 +126,8 @@ module.exports = {
 
 scrapeAddress('https://www.cryptocurrencymarket.uk/',);
 
-app.listen(port, () => {
-    console.log('App listening at http://localhost:3000')
-  })
+
+
 
  
 

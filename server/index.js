@@ -1,14 +1,20 @@
-const port = process.env.port || 5000;
-const express = require('express');
+
+const express = require('express')
 const app = express();
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const port = 3000
+var db = mongoose.connection
 
-const http = require('http');
-const server = http.server(app);
 
-app.use(express.static('client'));
 
-server.listen(port, function(){
 
-console.log('Server is running');
+app.listen(port, () => {
+    console.log('app listening at http://localhost:3000')
+  })
 
-});
+  
+
+
+
+

@@ -216,7 +216,7 @@ async function scrapeAddress3(url) {
 
     const exchanges = JSON.stringify(cryptoExchanges, null, 4);
     
-    fs.writeFileSync('server/exchange-data.json', exchanges);
+    fs.writeFileSync('exchange-data.json', exchanges);
 
     console.log({ exchange1, exchange2, exchange3, exchange4, exchange5, exchange6, exchange7, exchange8, exchange9, exchange10, rating1, rating2, rating3, rating4, rating5,
 
@@ -240,6 +240,5 @@ module.exports = {
 scrapeAddress3('https://coinmarketcap.com/rankings/exchanges/',);
 
 
-// https://cryptonews.net/
 
 

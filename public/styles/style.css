@@ -164,6 +164,120 @@ input:checked + label {
 
 
 
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #804DB3;
+  background-image: linear-gradient(#804DB3, rgba(255, 255, 255, 0));
+  overflow-x: hidden;
+  transition: 0.8s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 20px 40px;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive !important;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+label{
+  display:flex;
+   flex-direction: column;
+   width:70px;
+   cursor:pointer;
+   margin-left: 40px;
+
+ }
+ 
+ label span{
+   background: #804DB3;
+   border-radius:20px;
+   height:7px;
+   margin: 10px 0;
+   transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+ 
+ }
+ 
+ 
+ span:nth-of-type(1){
+   width:50%;
+   
+ }
+ 
+ span:nth-of-type(2){
+   width:100%;
+ }
+ 
+ 
+ span:nth-of-type(3){
+   width:75%;
+  
+ }
+ 
+ 
+ input[type="checkbox"]{
+   display:none;
+ }
+ 
+ 
+ input[type="checkbox"]:checked ~ span:nth-of-type(1){
+   transform-origin:bottom;
+   transform:rotatez(45deg) translate(8px,0px)
+ }
+ 
+ 
+ input[type="checkbox"]:checked ~ span:nth-of-type(2){
+   
+   transform-origin:top;
+   transform:rotatez(-45deg)
+ }
+ 
+ 
+ input[type="checkbox"]:checked ~ span:nth-of-type(3){
+   
+   transform-origin:bottom;
+   width:50%;
+   transform: translate(30px,-11px) rotatez(45deg);
+ 
+ }
+ 
+
+ .nav-icon
+
+ {
+ color: #804DB3;
+ }
+
+
+
 .container {
     
     margin-left: 0px;
@@ -174,7 +288,7 @@ input:checked + label {
 
 .logo-icon 
 {
-    margin-top: -20px;
+  margin-top: -20px;
   margin-bottom: 20px
 
 }
@@ -235,20 +349,18 @@ input:checked + label {
 
   .card-body {
 
-    width: 250px;
+    width: 100% !important;
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
 
-  }
 
-.card3 {
+  
 
-  width: 300px;
 }
 
 }
-
-
-
-
 
 
 .BTC-h { 
@@ -344,10 +456,25 @@ f
     margin-top:40px;
     margin-left: 50px;
     color: #804DB3;
-    font-size: 2em;
+    font-size: 2.5em !important;
     font-family: 'Comfortaa', cursive
 
 }
+
+.Intro
+{
+
+    margin-top:10px;
+    margin-left: 50px;
+    width: 100%;
+    padding-right: 0px !important;
+    color: var(--color-1);
+    font-size: 1.2em;
+    font-family: 'Questrial', sans-serif !important;
+    line-height: 1.65em;
+
+}
+
 
 
 .title2
@@ -361,6 +488,71 @@ f
     font-family: 'Comfortaa', cursive
 
 }
+
+
+.newsH {
+
+
+  color: #804DB3;
+  font-size: 2em;
+  font-family: 'Comfortaa', cursive
+}
+
+
+
+.news {
+
+  margin-left: 80px;
+  
+  }
+
+@media only screen and (max-width:  700px) 
+{
+.title {
+
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em !important;
+
+}
+
+.Intro {
+
+
+  margin-left: 0px !important;
+  margin-right: 20px !important;
+  font-size: 1.1em;
+
+}
+
+
+.title2 {
+
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em !important;
+
+}
+
+
+.newsH {
+
+
+  margin-left: 0px;
+  margin-right: 20px;
+  font-size: 1.5em !important;
+
+}
+
+.news {
+
+  margin-left: 0px;
+  
+  }
+
+}
+
+
 
 
 .feed 
@@ -379,33 +571,8 @@ f
 
 }
 
-.Intro
-{
-
-    margin-top:10px;
-    margin-left: 50px;
-    color: var(--color-1);
-    font-size: 1.2em;
-    font-family: 'Questrial', sans-serif !important;
-    line-height: 1.65em;
-
-}
 
 
-.news {
-
-margin-left: 80px;
-
-}
-
-
-.newsH {
-
-
-    color: #804DB3;
-    font-size: 2em;
-    font-family: 'Comfortaa', cursive
-}
 
 #cryptoTitle, #cryptoTitle2, #cryptoTitle3, #cryptoTitle4
 {
@@ -429,115 +596,6 @@ margin-left: 80px;
 }
 
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #804DB3;
-    background-image: linear-gradient(#804DB3, rgba(255, 255, 255, 0));
-    overflow-x: hidden;
-    transition: 0.8s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 20px 40px;
-    text-decoration: none;
-    font-family: 'Comfortaa', cursive !important;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-  label{
-    display:flex;
-     flex-direction: column;
-     width:70px;
-     cursor:pointer;
-     margin-left: 40px;
-
-   }
-   
-   label span{
-     background: #804DB3;
-     border-radius:20px;
-     height:7px;
-     margin: 10px 0;
-     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-   
-   }
-   
-   
-   span:nth-of-type(1){
-     width:50%;
-     
-   }
-   
-   span:nth-of-type(2){
-     width:100%;
-   }
-   
-   
-   span:nth-of-type(3){
-     width:75%;
-    
-   }
-   
-   
-   input[type="checkbox"]{
-     display:none;
-   }
-   
-   
-   input[type="checkbox"]:checked ~ span:nth-of-type(1){
-     transform-origin:bottom;
-     transform:rotatez(45deg) translate(8px,0px)
-   }
-   
-   
-   input[type="checkbox"]:checked ~ span:nth-of-type(2){
-     
-     transform-origin:top;
-     transform:rotatez(-45deg)
-   }
-   
-   
-   input[type="checkbox"]:checked ~ span:nth-of-type(3){
-     
-     transform-origin:bottom;
-     width:50%;
-     transform: translate(30px,-11px) rotatez(45deg);
-   
-   }
-   
-
-   .nav-icon
-
-   {
-   color: #804DB3;
-   }
 
    .M-heading 
    {
@@ -594,12 +652,14 @@ margin-left: 80px;
 {
 .card-body {
 
-  margin: 10px;
+  margin: 0px;
+  margin-bottom: 55px;
 
+}
 
 }
 
-}
+
 
 .socials
 {
@@ -721,22 +781,6 @@ margin-left: 80px;
 
   }
 
-  .card3 {
-
-
-    margin: 40px;
-    padding: 40px;
-    margin-bottom: 50px;
-    background-color: var(--color-2);
-    border-radius: 55px;
-    border: 0px;
-    box-shadow: var(--box-shadow-2);
-    transition: width 1s, height 2s;
-    font-family: 'Questrial', sans-serif !important;
-    font-size: 1.2em !important; 
-    color: var(--color-1);
-
-  }
 
   .S-heading
   {
@@ -748,6 +792,8 @@ margin-left: 80px;
 
   }
 
+  
+
   .purple 
   {
 
@@ -758,18 +804,15 @@ margin-left: 80px;
   }
 
 
-  .timeline-Footer {
-
-    visibility: hidden !important;
-  }
+  
 
   .card4 {
 
-
+    width: 50% !important;
     margin: 40px;
     padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     margin-bottom: 50px;
     background-color: var(--color-2);
     border-radius: 55px;
@@ -781,11 +824,17 @@ margin-left: 80px;
 
   }
 
+
+  
+
   .feed {
 
     justify-content: center;
 
   }
+
+
+
 
   #tweetName, #tweetLocation, #tweetDate 
   {
@@ -794,6 +843,57 @@ margin-left: 80px;
 
   }
 
+
+  @media only screen and (max-width:  700px) 
+{ 
+
+  .card4 {
+
+    width: 100% !important;
+    margin: 10px !important;
+    margin-right: 25px;
+  }
+
+  .S-heading {
+
+    font-size: 1.4em;
+    width: 100%;
+
+  }
+
+  .rating {
+
+    margin-left: 0px;
+
+  }
+
+  .volume
+  {
+
+    margin-left: 0px !important;
+
+  }
+
+  .card2-body
+
+  {
+
+    margin-top: 150px !important;
+    width: 100% !important;
+    margin: 0px !important;
+  }
+
+
+
+}
+
+  
+
+
+
+
+
+
   @media (min-width: 1200px)
   {
 .col-xl-10 {
@@ -801,6 +901,8 @@ margin-left: 80px;
   max-width: 100% !important;
 }
   }
+
+  
 
   .footer {
 
@@ -822,13 +924,59 @@ margin-left: 80px;
   border-radius: 2px;
 
 
-  
-
-
-
 }
 
 
   html.theme-dark .tv-ticker-item-last__short-name {
     color: #4f526e !important;
 }
+
+
+#myModal {
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 50px;
+
+}
+
+.timeline-Footer {
+
+  visibility: hidden !important;
+}
+
+
+.modal-content {
+
+
+  border-radius: 20px !important;
+  background-color: rgb(43, 43, 43);
+  color: #b4b4b4;
+  font-family: 'Comfortaa', cursive !important
+}
+
+.modal-title
+{
+
+  color: #b4b4b4;
+  font-family: 'Comfortaa', cursive !important
+}
+
+
+.close {
+  
+  margin-top: -6px;
+  float: right;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+
+}
+.close:hover {
+
+  color: #fff;
+}
+
