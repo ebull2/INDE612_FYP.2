@@ -1,113 +1,68 @@
 {
-  "created_at": "Wed May 19 16:49:20 +0000 2021",
-  "id": 1395059004544540700,
-  "id_str": "1395059004544540672",
-  "text": "Crypto Weather Report, May 13, 2021 — #RVN #BNB #UNI. Raven Coin, Binance Coin, Uniswap &amp; More! CRYPTO CRYPTO NEWS… https://t.co/d3R930hbEZ",
-  "truncated": true,
+  "created_at": "Wed May 19 17:23:38 +0000 2021",
+  "id": 1395067636153651200,
+  "id_str": "1395067636153651206",
+  "text": "RT @MattWallace888: Bad news: The entire market cap of #cryptocurrency has gone down about $150 billion in the short time since the China i…",
+  "truncated": false,
   "entities": {
     "hashtags": [
       {
-        "text": "RVN",
+        "text": "cryptocurrency",
         "indices": [
-          38,
-          42
-        ]
-      },
-      {
-        "text": "BNB",
-        "indices": [
-          43,
-          47
-        ]
-      },
-      {
-        "text": "UNI",
-        "indices": [
-          48,
-          52
+          55,
+          70
         ]
       }
     ],
     "symbols": [],
-    "user_mentions": [],
-    "urls": [
+    "user_mentions": [
       {
-        "url": "https://t.co/d3R930hbEZ",
-        "expanded_url": "https://twitter.com/i/web/status/1395059004544540672",
-        "display_url": "twitter.com/i/web/status/1…",
+        "screen_name": "MattWallace888",
+        "name": "Matt Wallace ⚠️",
+        "id": 805532293951606800,
+        "id_str": "805532293951606785",
         "indices": [
-          120,
-          143
+          3,
+          18
         ]
       }
-    ]
+    ],
+    "urls": []
   },
   "metadata": {
     "iso_language_code": "en",
     "result_type": "recent"
   },
-  "source": "<a href=\"https://cryptocryptonews.com\" rel=\"nofollow\">Crypto Crypto News </a>",
+  "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
   "in_reply_to_status_id": null,
   "in_reply_to_status_id_str": null,
   "in_reply_to_user_id": null,
   "in_reply_to_user_id_str": null,
   "in_reply_to_screen_name": null,
   "user": {
-    "id": 1129381702407741400,
-    "id_str": "1129381702407741441",
-    "name": "Crypto Crypto News",
-    "screen_name": "CryptoCryptoNe3",
-    "location": "Planet Crypto ",
-    "description": "https://t.co/57fbG3FEqT\nhttps://t.co/J49jnwZ9fV\n\nCrypto and Crowdfunding",
-    "url": "https://t.co/DtQ6RarJg5",
+    "id": 1389647288985813000,
+    "id_str": "1389647288985812997",
+    "name": "Chevyman1955",
+    "screen_name": "checkman1955",
+    "location": "",
+    "description": "car,s trucks \nanything with wheels",
+    "url": null,
     "entities": {
-      "url": {
-        "urls": [
-          {
-            "url": "https://t.co/DtQ6RarJg5",
-            "expanded_url": "https://cryptocryptonews.com",
-            "display_url": "cryptocryptonews.com",
-            "indices": [
-              0,
-              23
-            ]
-          }
-        ]
-      },
       "description": {
-        "urls": [
-          {
-            "url": "https://t.co/57fbG3FEqT",
-            "expanded_url": "http://bit.ly/2XbTmsJ",
-            "display_url": "bit.ly/2XbTmsJ",
-            "indices": [
-              0,
-              23
-            ]
-          },
-          {
-            "url": "https://t.co/J49jnwZ9fV",
-            "expanded_url": "https://bit.ly/2uyn5mD",
-            "display_url": "bit.ly/2uyn5mD",
-            "indices": [
-              24,
-              47
-            ]
-          }
-        ]
+        "urls": []
       }
     },
     "protected": false,
-    "followers_count": 2249,
-    "friends_count": 491,
-    "listed_count": 13,
-    "created_at": "Fri May 17 13:42:35 +0000 2019",
-    "favourites_count": 1019,
+    "followers_count": 24,
+    "friends_count": 211,
+    "listed_count": 0,
+    "created_at": "Tue May 04 18:25:31 +0000 2021",
+    "favourites_count": 1383,
     "utc_offset": null,
     "time_zone": null,
     "geo_enabled": false,
     "verified": false,
-    "statuses_count": 426356,
+    "statuses_count": 1925,
     "lang": null,
     "contributors_enabled": false,
     "is_translator": false,
@@ -116,18 +71,18 @@
     "profile_background_image_url": null,
     "profile_background_image_url_https": null,
     "profile_background_tile": false,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/1167819859557834754/1A_XdbI4_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1167819859557834754/1A_XdbI4_normal.jpg",
-    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1129381702407741441/1558101455",
+    "profile_image_url": "http://pbs.twimg.com/profile_images/1394422321541042176/5KiOLCR6_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1394422321541042176/5KiOLCR6_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1389647288985812997/1621291317",
     "profile_link_color": "1DA1F2",
     "profile_sidebar_border_color": "C0DEED",
     "profile_sidebar_fill_color": "DDEEF6",
     "profile_text_color": "333333",
     "profile_use_background_image": true,
-    "has_extended_profile": false,
+    "has_extended_profile": true,
     "default_profile": true,
     "default_profile_image": false,
-    "following": true,
+    "following": false,
     "follow_request_sent": false,
     "notifications": false,
     "translator_type": "none",
@@ -137,11 +92,123 @@
   "coordinates": null,
   "place": null,
   "contributors": null,
+  "retweeted_status": {
+    "created_at": "Wed May 19 05:37:58 +0000 2021",
+    "id": 1394890050324910000,
+    "id_str": "1394890050324910081",
+    "text": "Bad news: The entire market cap of #cryptocurrency has gone down about $150 billion in the short time since the Chi… https://t.co/sHA3JBe7vm",
+    "truncated": true,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "cryptocurrency",
+          "indices": [
+            35,
+            50
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/sHA3JBe7vm",
+          "expanded_url": "https://twitter.com/i/web/status/1394890050324910081",
+          "display_url": "twitter.com/i/web/status/1…",
+          "indices": [
+            117,
+            140
+          ]
+        }
+      ]
+    },
+    "metadata": {
+      "iso_language_code": "en",
+      "result_type": "recent"
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 805532293951606800,
+      "id_str": "805532293951606785",
+      "name": "Matt Wallace ⚠️",
+      "screen_name": "MattWallace888",
+      "location": "United States",
+      "description": "Number 1 Dogecoin YouTuber! Final Stand is my channel (not a financial adviser). @ElonMusk’s watching. Follow with notifications on for DOGE updates! :)",
+      "url": "https://t.co/r0e3mvLrex",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/r0e3mvLrex",
+              "expanded_url": "https://youtube.com/channel/UCXqaGIjJysa810FJKvYvcJQ",
+              "display_url": "youtube.com/channel/UCXqaG…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 167570,
+      "friends_count": 1215,
+      "listed_count": 232,
+      "created_at": "Sun Dec 04 22:00:39 +0000 2016",
+      "favourites_count": 10047,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 3164,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1333332549326823425/1haAVJ8E_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1333332549326823425/1haAVJ8E_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/805532293951606785/1619204698",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 610,
+    "favorite_count": 3153,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
   "is_quote_status": false,
-  "retweet_count": 0,
+  "retweet_count": 610,
   "favorite_count": 0,
   "favorited": false,
   "retweeted": false,
-  "possibly_sensitive": false,
   "lang": "en"
 }
