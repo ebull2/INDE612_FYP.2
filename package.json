@@ -9,7 +9,7 @@
     "Crypto-News": "nodemon server/CryptoNews-scraper.js",
     "Exchanges": "nodemon server/exchanges-scraper.js",
     "Bot": "node server/bot.js",
-    "start-all": "concurrently \"npm run start\" \"npm run scrapers\" \"npm run Crypto-News\" \"npm run Exchanges\" \"npm run Bot\"",
+    "start-all": "concurrently \"npm run start\" \"npm run prices\" \"npm run Crypto-News\" \"npm run Exchanges\" \"npm run Bot\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

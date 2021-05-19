@@ -10,7 +10,7 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
 ### To install all dependencies, do:
 
-cd server && npm install nodemon puppeteer mongoose express body-parser buffer-shims twit concurrently node-fetch ejs express-ejs-layouts
+    npm install nodemon puppeteer mongoose express body-parser buffer-shims twit concurrently node-fetch ejs express-ejs-layouts
 
 Dev Dependecies:
 
@@ -18,13 +18,21 @@ Dev Dependecies:
     - nodemon
 
 
-
-
 ## TO RUN:
 
-In terminal - 
+    In terminal - 
 
-npm run start all 
+    npm run start all 
+
+    http://localhost:3005/
+
+    Using Glitch - 
+
+    https://unify-crypto.glitch.me/
+
+    Heroku App - 
+
+    https://unify-crypto.herokuapp.com/
 
 
 ## UNIFY
