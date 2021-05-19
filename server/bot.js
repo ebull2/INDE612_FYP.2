@@ -15,20 +15,18 @@ var T = new Twit(config);
 
 
 
-
 // Collect tweets
 
 
-T.get('search/tweets', { q: 'Crypto News', count: 1 }, function(err, data, response) {
+T.get('search/tweets', { q: 'Crypto News', count: 1 },
 
+function(err, data, response) {
   var tweets = data.statuses;
-
   for (var i = 0; i < tweets.length; i ++)  {
-
 
     const tweetBot = JSON.stringify(tweets[i], null, 2);
     
-    fs.writeFileSync('tweets.json', tweetBot);
+    fs.writeFileSync('server/tweets.json', tweetBot);
     
 
     console.log(tweets[i].text);
@@ -37,12 +35,6 @@ T.get('search/tweets', { q: 'Crypto News', count: 1 }, function(err, data, respo
 
   }
 });
-
-
-
-
-
-
 
 
 // POST TWEETS

@@ -1,0 +1,257 @@
+
+<%- include('partials/header'); -%>
+
+    <title>UNIFY</title>
+</head>
+<body data-theme="light" ></div>
+
+
+
+    <section>
+
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index">HOME</a>
+            <a href="exchanges">HOW TO INVEST?</a>
+            <a href="about">ABOUT</a>
+
+          </div>
+
+         
+    
+          <span style="font-size:30px;cursor:pointer;margin-left:50px;" class="nav-icon toggleable" onclick="openNav()">
+    
+            <img src="../assets/menu-icon.png" style="width: 50px" class="mt-4">
+        </span>
+
+        <div class="text-center logo-icon">
+        <a href="index"><img src="assets/final-logo.png" width=50px></a>
+        </div>
+        
+
+        <div class="container">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            
+            <div class="modal-body text-center">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h5>FOLLOW OUR TWITTER PAGE FOR LATEST UPDATES ON CRYPTOCURENCY</h5>
+              <a href="https://twitter.com/unify_crypto" target="_blank"><img src="assets/twitter.logo.png" class="text-center mt-3" style="width:80px"></a>
+			  </br><br>
+        <p> 🔔 Please make sure to turn on notifications to be updated !!</p>
+        <br>
+        <p>PS, All tweets are calling from a bot 🤖</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="container-fluid mt-2">
+           <div class="row">
+         <div class="col-xl-7 align-items-start">
+        
+        <div class="card text-center bitcoin">
+
+        <img src="assets/btc-logo.png" width=100px>
+        <h1 class="BTC-h">Bitcoin</h1>
+        <div name="BitcoinPrice" id="BitcoinPrice"><p><%= prices.BTCprice %></p></div>
+        
+        <p class="volume">Volume 24h</p>
+        <div id="BitcoinVolume"><p><%= prices.BTCvolume %></p></div>
+        </div>
+
+        <div class="card text-center Ethereum">
+            <img src="assets/eth-logo.png" width=70px class="text-center">
+            <h1 class="ETH-h">Ethereum</h1>
+            <div id="EthereumPrice"><p><%= prices.ETHprice %></p></div>
+            <p class="volume">Volume 24h</p>
+        <div id="EthereumVolume"><p><%= prices.ETHvolume %></p></div>
+        </div>
+
+        <div class="card text-center Ripple">
+            <img src="assets/xrp-logo.png" width=90px class="mt-4">
+                <h1 class="mt-4 XRP-h" >Ripple</h1>
+                <div id="RipplePrice"><p><%= prices.XRPprice %></p></div>
+                <p class="volume">Volume 24h</p>
+        <div id="RippleVolume"><p><%= prices.XRPvolume %></p></div>
+        </div>
+         </div>
+         
+         <!-- REMEMBER TO CODE OUT DOCUMENTATION -->
+
+            <div class="col-xl-5 col-xs-2 align-items-end">
+                <div class="card2">
+                    <h1 class="chart-h">Bitcoin Chart</h1>
+                    
+                    <div class="tradingView-Chart">
+
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="mt-5">
+                  <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCGBP/?exchange=BINANCE" rel="noopener" target="_blank"></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "BINANCE:BTCGBP",
+                    "color": "#727272",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "dark",
+                    "trendLineColor": "#804DB3",
+                    "underLineColor": "#8065B394",
+                    "isTransparent": true,
+                    "autosize": true,
+                    "largeChartUrl": ""
+                  }
+                    </script>
+                  </div>
+                </div>
+                <!-- TradingView Widget END -->
+                    </div> 
+                </div>
+                </div>    
+
+             </div>
+
+        </div>
+
+
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-7 col-xs-2 mt-2">
+              
+            <div class="col-xl-8  col-xs-2 ">
+            <h1 class="title" >What Is CryptoCurrency?</h1> 
+            </div>
+            
+            <div class="col-xl-12 col-xs-2">
+            <br><p class="Intro">Cryptocurrency can be described as a type of currency that uses digital files as money. One thing to be made clear is that one person or any government doesn’t control cryptocurrency because the first Cryptocurrencies were made to be independent of government issued currencies.
+                <br><br>
+                It uses decentralized control, unlike “traditional” currencies. The more significant advantage is that cryptocurrency transfers are secure, anonymous, and transparent.
+                <br>
+                Presently, there are more than 4000 existing cryptocurrencies, and most of it based on blockchain technology, but we will list out three of them.
+                 </p>
+                 <p class="Intro">
+                   <b>For a more visual understanding see this short simple explaination on what cryptoCurrency is:</b> 
+                     <a href="https://www.youtube.com/watch?v=6Gu2QMTAkEU" target="_blank"><b> What is Cryptocurrency? A Simple Explanation </b> </a>
+                </p>
+            </div>
+
+           </div>
+
+
+        <div class="col-xl-5 col-xs-2 mt-5">
+            <div class="news">
+                <h1 class="newsH">TOP CRYPTO NEWS</h1>
+
+
+                <div class="mt-5" id="cryptoTitle"><p><%= news.newsTitle %></p></div>
+
+                <div class="mt-2" id="cryptoSrc"><p><%= news.newsSrc %></p></div>
+
+                <div class="mt-2" id="cryptoTitle2"><p><%= news.newsTitle2 %></p></div>
+
+                <div class="mt-2" id="cryptoSrc2"><p><%= news.newsSrc2 %></p></div>   
+
+                <div class="mt-2" id="cryptoTitle3"><p><%= news.newsTitle3 %></p></div>
+
+                <div class="mt-2" id="cryptoSrc3"><p><%= news.newsSrc3 %></p></div>  
+
+                <div class="mt-2" id="cryptoTitle4"><p><%= news.newsTitle4 %></p></div>
+
+                <div class="mt-2" id="cryptoSrc4"><p><%= news.newsSrc4 %></p></div>  
+
+                </div>    
+               </div>
+            </div>
+           </div>
+
+
+           
+           <div class="container-fluid">
+           <div class="col-xl-10 col-xs-4">
+            
+           <div class="card4 text-center  mt-5">
+               <div class="heading text-center">
+               <img src="assets/twitter.logo.png" style="width: 100px">
+               <h1 class="text-center title2">Crypto Tweet Feed</h1>
+               </div>
+               
+               <div class="mt-4">
+                   <div class="feed">
+               <div id="name" class="mb-3"></div>
+               <div id="tweet1" class="mb-3 "><p><%= tweets.text %></p></div>
+               <div class="row text-center feed">
+               <p class="mr-2"><b>Screen Name :</b></p><div id="tweetName" class="mb-3"><p><%= tweets.user.screen_name %></p></div>
+            </div>
+
+            <div class="row text-center feed">
+                <p class="mr-2"><b>Location :</b></p>  <div id="tweetLocation" class="mb-3"><p><%= tweets.user.location %></p></div>
+            </div>
+
+            <div class="row text-center feed">
+               <p class="mr-2"><b>Date of Tweet :</b></p> <div id="tweetDate" class="mb-3"><p><%= tweets.created_at %></p></div>
+            </div>
+               </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <br><br><br>
+     
+    </section>
+
+
+    
+    <div class="theme-switcher">
+        <input type="checkbox" id="switcher">
+        <label for=switcher>switch</label>
+      </div>
+      
+
+      <%- include('partials/footer'); -%>
+
+
+<script>
+
+
+
+$(window).load(function(){
+        $('#myModal').modal('show');
+    });
+    
+
+function openNav() {
+        document.getElementById("mySidenav").style.width = "380px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+
+
+</script>
+
+
+</body>
+
+<script src="js/script.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+</html>

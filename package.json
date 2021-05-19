@@ -2,17 +2,15 @@
   "name": "server",
   "version": "1.0.0",
   "description": "INDE612_FYP",
-  "main": "mongo.js",
+  "main": "app.js",
   "scripts": {
-    
-    "start": "start-all",
-    "scrapers": "node scrapers.js",
-    "Crypto-News": "node CryptoNews-scraper.js",
-    "Exchanges": "node exchanges-scraper.js",
-    "Bot": "node bot.js",
-    "start-all": "concurrently \"npm run scrapers\" \"npm run Crypto-News\" \"npm run Exchanges\" \"npm run Bot\"",
+    "start": "nodemon app.js",
+    "scrapers": "nodemon server/scrapers.js",
+    "Crypto-News": "nodemon server/CryptoNews-scraper.js",
+    "Exchanges": "nodemon server/exchanges-scraper.js",
+    "Bot": "node server/bot.js",
+    "start-all": "concurrently \"npm run start\" \"npm run scrapers\" \"npm run Crypto-News\" \"npm run Exchanges\" \"npm run Bot\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "repository": {
     "type": "git",
@@ -27,16 +25,20 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "buffer-shims": "^1.0.0",
+    "concurrently": "^6.1.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
     "mongoose": "^5.10.0",
     "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
+    "pug": "^3.0.2",
     "puppeteer": "^8.0.0",
     "twit": "^2.2.11"
   },
   "keywords": [],
   "devDependencies": {
-    "concurrently": "^6.1.0"
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
   }
 }

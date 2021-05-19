@@ -10,21 +10,22 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
 ### To install all dependencies, do:
 
-npm install  nodemon puppeteer mongoose express body-parser buffer-shims twit
+cd server && npm install nodemon puppeteer mongoose express body-parser buffer-shims twit concurrently node-fetch ejs express-ejs-layouts
+
+Dev Dependecies:
+
+    - Concurrently 
+    - nodemon
+
+
 
 
 ## TO RUN:
 
 In terminal - 
 
+npm run start all 
 
-node server/scrapers.js     
-
-node server/CryptoNews-scraper.js
-
-node server/exchanges-scraper.js
-
-node server/bot.js
 
 ## UNIFY
 

@@ -56,6 +56,15 @@ body[data-theme="dark"] {
 
 }
 
+.h5 {
+
+
+  font-family: 'Comfortaa', cursive !important;
+  letter-spacing: 0.2em;
+  line-height: 1.5rem;
+  font-size: 1.25em;
+}
+
 .p {
 
     font-size: 0.5em !important; 
@@ -121,14 +130,12 @@ input {
 
 label {
   cursor: pointer;
-  display: block;
   text-indent: -9999px;
   height: 35px;
   width: 60px;
   border-radius: 50px;
   border: 3px !important;
   border-color: black !important;
-
   background-color: #EAECEF;
   transition: 1s ease background-color;
 }
@@ -299,7 +306,7 @@ label{
     margin: 20px;
     margin-left: 30px;
     padding: 20px;
-    height: 330px;
+    height: 350px;
     width: 250px;
     display: inline-block;
     background-color: var(--color-3);

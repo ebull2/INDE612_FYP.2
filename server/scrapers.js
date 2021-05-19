@@ -13,7 +13,6 @@ async function scrapeAddress(url) {
     const page  = await browser.newPage();
     await page.goto(url);
 
-    //*[@id="example"]/tbody/tr[1]/td[3]/span[2]
    
     await page.waitForXPath('//*[@id="market-table"]/tbody/tr[1]/td[2]/a');
     const [el]= await page.$x('//*[@id="market-table"]/tbody/tr[1]/td[2]/a');
@@ -26,8 +25,8 @@ async function scrapeAddress(url) {
     const txt2 = await el2.getProperty('textContent');
     const  ETHprice = await txt2.jsonValue();
 
-    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[5]/td[2]/a');
-    const [el3]= await page.$x('//*[@id="market-table"]/tbody/tr[5]/td[2]/a');
+    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[4]/td[2]/a');
+    const [el3]= await page.$x('//*[@id="market-table"]/tbody/tr[4]/td[2]/a');
     const txt3 = await el3.getProperty('textContent');
     const  XRPprice = await txt3.jsonValue();
 
@@ -43,8 +42,8 @@ async function scrapeAddress(url) {
     const txt5 = await el5.getProperty('textContent');
     const ETHvolume = await txt5.jsonValue();
 
-    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[4]/td[5]/a');
-    const [el6]= await page.$x('//*[@id="market-table"]/tbody/tr[4]/td[5]/a');
+    await page.waitForXPath('//*[@id="market-table"]/tbody/tr[4]/td[3]');
+    const [el6]= await page.$x('//*[@id="market-table"]/tbody/tr[4]/td[3]');
     const txt6 = await el6.getProperty('textContent');
     const XRPvolume = await txt6.jsonValue();
 
@@ -105,7 +104,7 @@ async function scrapeAddress(url) {
 
     const data = JSON.stringify(cryptoPrices, null, 4 );
     
-    fs.writeFileSync('data.json', data,);
+    fs.writeFileSync('server/data.json', data,);
     
 
     console.log({BTCprice, ETHprice, XRPprice, BTCvolume, ETHvolume, XRPvolume });

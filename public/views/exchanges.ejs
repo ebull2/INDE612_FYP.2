@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../public/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="shortcut icon" href="./assets/final-logo.png" type="image/png">
 
     <title>UNIFY | How To Invest?</title>
@@ -24,9 +24,9 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">HOME</a>
-        <a href="exchanges.html">HOW TO INVEST?</a>
-        <a href="about.html">ABOUT</a>
+        <a href="index">HOME</a>
+        <a href="exchanges">HOW TO INVEST?</a>
+        <a href="about">ABOUT</a>
 
       </div>
 
@@ -37,7 +37,7 @@
 
 
     <div class="text-center logo-icon mb-5">
-        <a href="index.html"><img src="assets/final-logo.png" width=50px></a>
+        <a href="index"><img src="assets/final-logo.png" width=50px></a>
         </div>
 
     
@@ -78,7 +78,7 @@
 
                 <div class="row">
      
-                <h4>(1)</h4><div id="exchange1" class="ml-2"></div> <div id="rating1" class="text-center"></div> <div id="volume1" class="ml-2 mr-5 "></div>
+                <h4>(1)</h4><div id="exchange1" class="ml-2"><p><%= exchanges.exchange1 %></p></div> <div id="rating1" class="text-center"><p><%= exchanges.rating1 %></p></div> <div id="volume1" class="ml-2 mr-5 "><p><%= exchanges.Volume1 %></p></div>
 
                 </div>
 
@@ -86,7 +86,7 @@
 
                 <div class="row">
                 
-                <h4>(2)</h4><div id="exchange2" class=" ml-3"></div> <div id="rating2" class="ml-10"></div>  <div id="volume2" class="ml-2 mr-5"></div>
+                <h4>(2)</h4><div id="exchange2" class=" ml-3"><p><%= exchanges.exchange2 %></p></div> <div id="rating2" class="ml-10"><p><%= exchanges.rating2 %></p></div>  <div id="volume2" class="ml-2 mr-5"><p><%= exchanges.Volume2 %></p></div>
 
                 </div>
 
@@ -94,7 +94,7 @@
 
                 <div class="row">
 
-                <h4>(3)</h4><div id="exchange3" class="ml-3" ></div> <div id="rating3" class="ml-10"></div> <div id="volume3" class="ml-2 mr-5"></div>
+                <h4>(3)</h4><div id="exchange3" class="ml-3" ><p><%= exchanges.exchange3 %></p></div> <div id="rating3" class="ml-10"><p><%= exchanges.rating3 %></p></div> <div id="volume3" class="ml-2 mr-5"><p><%= exchanges.Volume3 %></p></div>
 
                 </div>
 
@@ -102,31 +102,7 @@
 
                 <div class="row">
 
-                <h4>(4)</h4><div id="exchange4" class="ml-3"></div> <div id="rating4" class="ml-10"></div> <div id="volume4" class="ml-2 mr-5"></div>
-
-                </div>
-
-                <div id="separator"></div>
-
-                <div class="row">
-                
-                <h4>(5)</h4><div id="exchange5" class="ml-3"></div>  <div id="rating5" class="ml-10"></div> <div id="volume5" class="ml-2 mr-5"></div>
-
-                </div>
-
-                <div id="separator"></div>
-
-                <div class="row">
-
-                <h4>(6)</h4><div id="exchange6" class="ml-3" ></div>  <div id="rating6" class="ml-10"></div> <div id="volume6" class="ml-2 mr-5"></div>
-
-                </div>
-
-                <div id="separator"></div>
-
-                <div class="row">
-
-                <h4>(7)</h4><div id="exchange7" class="ml-3"></div>   <div id="rating7" class="ml-10"></div>  <div id="volume7" class="ml-2 mr-5"></div>
+                <h4>(4)</h4><div id="exchange4" class="ml-3"><p><%= exchanges.exchange4 %></p></div> <div id="rating4" class="ml-10"><p><%= exchanges.rating4 %></p></div> <div id="volume4" class="ml-2 mr-5"><p><%= exchanges.Volume4 %></p></div>
 
                 </div>
 
@@ -134,7 +110,7 @@
 
                 <div class="row">
                 
-                <h4>(8)</h4><div id="exchange8" class="ml-3"></div>   <div id="rating8" class="ml-10"></div>  <div id="volume8" class="ml-2 mr-5"></div>
+                <h4>(5)</h4><div id="exchange5" class="ml-3"><p><%= exchanges.exchange5 %></p></div>  <div id="rating5" class="ml-10"><p><%= exchanges.rating5 %></p></div> <div id="volume5" class="ml-2 mr-5"><p><%= exchanges.Volume5 %></p></div>
 
                 </div>
 
@@ -142,7 +118,7 @@
 
                 <div class="row">
 
-                <h4>(9)</h4><div id="exchange9" class="ml-3" ></div>    <div id="rating9" class="ml-10"></div>  <div id="volume9" class="ml-2 mr-5"></div>
+                <h4>(6)</h4><div id="exchange6" class="ml-3" ><p><%= exchanges.exchange6 %></p></div>  <div id="rating6" class="ml-10"><p><%= exchanges.rating6 %></p></div> <div id="volume6" class="ml-2 mr-5"><p><%= exchanges.Volume6 %></p></div>
 
                 </div>
 
@@ -150,7 +126,31 @@
 
                 <div class="row">
 
-                <h4>(10)</h4><div id="exchange10" class="ml-3" ></div>   <div id="rating10" class="ml-10"></div> <div id="volume10" class="ml-2 mr-5"></div>
+                <h4>(7)</h4><div id="exchange7" class="ml-3"><p><%= exchanges.exchange7 %></p></div>   <div id="rating7" class="ml-10"><p><%= exchanges.rating7 %></p></div>  <div id="volume7" class="ml-2 mr-5"><p><%= exchanges.Volume7 %></p></div>
+
+                </div>
+
+                <div id="separator"></div>
+
+                <div class="row">
+                
+                <h4>(8)</h4><div id="exchange8" class="ml-3"><p><%= exchanges.exchange8 %></p></div>   <div id="rating8" class="ml-10"><p><%= exchanges.rating8 %></p></div>  <div id="volume8" class="ml-2 mr-5"><p><%= exchanges.Volume8 %></p></div>
+
+                </div>
+
+                <div id="separator"></div>
+
+                <div class="row">
+
+                <h4>(9)</h4><div id="exchange9" class="ml-3" ><p><%= exchanges.exchange9 %></p></div>    <div id="rating9" class="ml-10"><p><%= exchanges.rating9 %></p></div>  <div id="volume9" class="ml-2 mr-5"><p><%= exchanges.Volume9 %></p></div>
+
+                </div>
+
+                <div id="separator"></div>
+
+                <div class="row">
+
+                <h4>(10)</h4><div id="exchange10" class="ml-3" ><p><%= exchanges.exchange10 %></p></div>   <div id="rating10" class="ml-10"><p><%= exchanges.rating10 %></p></div> <div id="volume10" class="ml-2 mr-5"><p><%= exchanges.Volume10 %></p></div>
                 
                 </div>
 
@@ -322,56 +322,6 @@
     <script>
 
 
-
-    fetch('/server/exchange-data.json')
-        .then(response => response.json())
-        .then(data => {
-
-            console.log(data)
-            document.querySelector("#exchange1").innerText = data.exchange1
-            document.querySelector("#exchange2").innerText = data.exchange2
-            document.querySelector("#exchange3").innerText = data.exchange3
-            document.querySelector("#exchange4").innerText = data.exchange4
-            document.querySelector("#exchange5").innerText = data.exchange5
-            document.querySelector("#exchange6").innerText = data.exchange6
-            document.querySelector("#exchange7").innerText = data.exchange7
-            document.querySelector("#exchange8").innerText = data.exchange8
-            document.querySelector("#exchange9").innerText = data.exchange9
-            document.querySelector("#exchange10").innerText = data.exchange10
-            document.querySelector("#rating1").innerText = data.rating1
-            document.querySelector("#rating2").innerText = data.rating2
-            document.querySelector("#rating3").innerText = data.rating3
-            document.querySelector("#rating4").innerText = data.rating4
-            document.querySelector("#rating5").innerText = data.rating5
-            document.querySelector("#rating6").innerText = data.rating6
-            document.querySelector("#rating7").innerText = data.rating7
-            document.querySelector("#rating8").innerText = data.rating8
-            document.querySelector("#rating9").innerText = data.rating9
-            document.querySelector("#rating10").innerText = data.rating10
-            document.querySelector("#volume1").innerText = data.Volume1
-            document.querySelector("#volume2").innerText = data.Volume2
-            document.querySelector("#volume3").innerText = data.Volume3
-            document.querySelector("#volume4").innerText = data.Volume4
-            document.querySelector("#volume5").innerText = data.Volume5
-            document.querySelector("#volume6").innerText = data.Volume6
-            document.querySelector("#volume7").innerText = data.Volume7
-            document.querySelector("#volume8").innerText = data.Volume8
-            document.querySelector("#volume9").innerText = data.Volume9
-            document.querySelector("#volume10").innerText = data.Volume10
-
-
-
-
-
-            
-           
-            
-        }).catch(err => {
-        // code to handle request errors
-        console.error('Error: ', err);
-    }); 
-
-
     function openNav() {
         document.getElementById("mySidenav").style.width = "380px";
         }
@@ -380,13 +330,11 @@
         document.getElementById("mySidenav").style.width = "0";
         }
 
-
-
     </script>
 
 </body>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>

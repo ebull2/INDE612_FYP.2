@@ -98,7 +98,7 @@ async function scrapeAddress2(url) {
 
     const news = JSON.stringify(cryptoNews, null, 4);
     
-    fs.writeFileSync('news-data.json', news);
+    fs.writeFileSync('server/news-data.json', news);
 
     console.log({ newsTitle, newsSrc, newsTitle2, newsSrc2, newsSrc3, newsTitle4, newsSrc4 });
 
