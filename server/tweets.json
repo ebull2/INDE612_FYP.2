@@ -1,29 +1,47 @@
 {
-  "created_at": "Wed May 19 10:12:03 +0000 2021",
-  "id": 1394959026107060200,
-  "id_str": "1394959026107060225",
-  "text": "RT @coinbureau: China banned #crypto payments in 2013 &amp; 2017. It has been banned for years. They issue a statement reiterating this ban and…",
+  "created_at": "Wed May 19 10:25:13 +0000 2021",
+  "id": 1394962341226291200,
+  "id_str": "1394962341226291201",
+  "text": "RT @klever_io: 📢 $KLV will be listed on @c0insbit\n\n#Coinsbit is an Estonian crypto exchange operating under European Union (EU) regulation…",
   "truncated": false,
   "entities": {
     "hashtags": [
       {
-        "text": "crypto",
+        "text": "Coinsbit",
         "indices": [
-          29,
-          36
+          51,
+          60
         ]
       }
     ],
-    "symbols": [],
+    "symbols": [
+      {
+        "text": "KLV",
+        "indices": [
+          17,
+          21
+        ]
+      }
+    ],
     "user_mentions": [
       {
-        "screen_name": "coinbureau",
-        "name": "Coin Bureau (guy.eth)🕵🏻",
-        "id": 906230721513181200,
-        "id_str": "906230721513181184",
+        "screen_name": "klever_io",
+        "name": "Klever",
+        "id": 1003282031147737100,
+        "id_str": "1003282031147737088",
         "indices": [
           3,
-          14
+          13
+        ]
+      },
+      {
+        "screen_name": "c0insbit",
+        "name": "Coinsbit",
+        "id": 30831487,
+        "id_str": "30831487",
+        "indices": [
+          40,
+          49
         ]
       }
     ],
@@ -33,19 +51,19 @@
     "iso_language_code": "en",
     "result_type": "recent"
   },
-  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
   "in_reply_to_status_id": null,
   "in_reply_to_status_id_str": null,
   "in_reply_to_user_id": null,
   "in_reply_to_user_id_str": null,
   "in_reply_to_screen_name": null,
   "user": {
-    "id": 1379856736065044500,
-    "id_str": "1379856736065044490",
-    "name": "d@attila",
-    "screen_name": "dattila2",
-    "location": "Cluj-Napoca, România",
-    "description": "",
+    "id": 731769175077584900,
+    "id_str": "731769175077584898",
+    "name": "hendra lim",
+    "screen_name": "hendra4648",
+    "location": "",
+    "description": "$klv, #Klv",
     "url": null,
     "entities": {
       "description": {
@@ -53,16 +71,16 @@
       }
     },
     "protected": false,
-    "followers_count": 0,
-    "friends_count": 19,
-    "listed_count": 0,
-    "created_at": "Wed Apr 07 18:02:16 +0000 2021",
-    "favourites_count": 282,
+    "followers_count": 125,
+    "friends_count": 142,
+    "listed_count": 1,
+    "created_at": "Sun May 15 08:52:21 +0000 2016",
+    "favourites_count": 2946,
     "utc_offset": null,
     "time_zone": null,
     "geo_enabled": false,
     "verified": false,
-    "statuses_count": 5,
+    "statuses_count": 3098,
     "lang": null,
     "contributors_enabled": false,
     "is_translator": false,
@@ -71,14 +89,15 @@
     "profile_background_image_url": null,
     "profile_background_image_url_https": null,
     "profile_background_tile": false,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/1381355841916448770/TrRbDmwM_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1381355841916448770/TrRbDmwM_normal.jpg",
+    "profile_image_url": "http://pbs.twimg.com/profile_images/1371073004550062088/hmoXLWRC_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1371073004550062088/hmoXLWRC_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/731769175077584898/1618107550",
     "profile_link_color": "1DA1F2",
     "profile_sidebar_border_color": "C0DEED",
     "profile_sidebar_fill_color": "DDEEF6",
     "profile_text_color": "333333",
     "profile_use_background_image": true,
-    "has_extended_profile": true,
+    "has_extended_profile": false,
     "default_profile": true,
     "default_profile_image": false,
     "following": false,
@@ -92,31 +111,50 @@
   "place": null,
   "contributors": null,
   "retweeted_status": {
-    "created_at": "Wed May 19 10:04:02 +0000 2021",
-    "id": 1394957010282635300,
-    "id_str": "1394957010282635269",
-    "text": "China banned #crypto payments in 2013 &amp; 2017. It has been banned for years. They issue a statement reiterating this… https://t.co/aG0BkbRhmb",
+    "created_at": "Wed May 19 10:20:10 +0000 2021",
+    "id": 1394961068179529700,
+    "id_str": "1394961068179529732",
+    "text": "📢 $KLV will be listed on @c0insbit\n\n#Coinsbit is an Estonian crypto exchange operating under European Union (EU) re… https://t.co/XIztQyPChD",
     "truncated": true,
     "entities": {
       "hashtags": [
         {
-          "text": "crypto",
+          "text": "Coinsbit",
           "indices": [
-            13,
-            20
+            36,
+            45
           ]
         }
       ],
-      "symbols": [],
-      "user_mentions": [],
+      "symbols": [
+        {
+          "text": "KLV",
+          "indices": [
+            2,
+            6
+          ]
+        }
+      ],
+      "user_mentions": [
+        {
+          "screen_name": "c0insbit",
+          "name": "Coinsbit",
+          "id": 30831487,
+          "id_str": "30831487",
+          "indices": [
+            25,
+            34
+          ]
+        }
+      ],
       "urls": [
         {
-          "url": "https://t.co/aG0BkbRhmb",
-          "expanded_url": "https://twitter.com/i/web/status/1394957010282635269",
+          "url": "https://t.co/XIztQyPChD",
+          "expanded_url": "https://twitter.com/i/web/status/1394961068179529732",
           "display_url": "twitter.com/i/web/status/1…",
           "indices": [
-            121,
-            144
+            117,
+            140
           ]
         }
       ]
@@ -125,27 +163,27 @@
       "iso_language_code": "en",
       "result_type": "recent"
     },
-    "source": "<a href=\"https://buffer.com\" rel=\"nofollow\">Buffer</a>",
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
     "in_reply_to_status_id": null,
     "in_reply_to_status_id_str": null,
     "in_reply_to_user_id": null,
     "in_reply_to_user_id_str": null,
     "in_reply_to_screen_name": null,
     "user": {
-      "id": 906230721513181200,
-      "id_str": "906230721513181184",
-      "name": "Coin Bureau (guy.eth)🕵🏻",
-      "screen_name": "coinbureau",
-      "location": "Coin Headquarters",
-      "description": "The Crypto Coin Authority. Bringing you the latest news, reviews and information to hit the blockchain.",
-      "url": "https://t.co/6NYGEbXnrs",
+      "id": 1003282031147737100,
+      "id_str": "1003282031147737088",
+      "name": "Klever",
+      "screen_name": "klever_io",
+      "location": "World",
+      "description": "The self-bank app. \n\nDownload for iOS & Android at https://t.co/uUA9TEMhSz",
+      "url": "https://t.co/Ms2a1BIFAO",
       "entities": {
         "url": {
           "urls": [
             {
-              "url": "https://t.co/6NYGEbXnrs",
-              "expanded_url": "https://guy.coinbureau.com/socials",
-              "display_url": "guy.coinbureau.com/socials",
+              "url": "https://t.co/Ms2a1BIFAO",
+              "expanded_url": "https://klever.io",
+              "display_url": "klever.io",
               "indices": [
                 0,
                 23
@@ -154,20 +192,30 @@
           ]
         },
         "description": {
-          "urls": []
+          "urls": [
+            {
+              "url": "https://t.co/uUA9TEMhSz",
+              "expanded_url": "http://klever.io",
+              "display_url": "klever.io",
+              "indices": [
+                51,
+                74
+              ]
+            }
+          ]
         }
       },
       "protected": false,
-      "followers_count": 180041,
-      "friends_count": 152,
-      "listed_count": 1488,
-      "created_at": "Fri Sep 08 19:00:15 +0000 2017",
-      "favourites_count": 2569,
+      "followers_count": 214192,
+      "friends_count": 4632,
+      "listed_count": 228,
+      "created_at": "Sun Jun 03 14:27:31 +0000 2018",
+      "favourites_count": 24106,
       "utc_offset": null,
       "time_zone": null,
-      "geo_enabled": false,
+      "geo_enabled": true,
       "verified": false,
-      "statuses_count": 8712,
+      "statuses_count": 8381,
       "lang": null,
       "contributors_enabled": false,
       "is_translator": false,
@@ -176,15 +224,15 @@
       "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
       "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
       "profile_background_tile": false,
-      "profile_image_url": "http://pbs.twimg.com/profile_images/1364405835414315012/h5DCwcAu_normal.jpg",
-      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1364405835414315012/h5DCwcAu_normal.jpg",
-      "profile_banner_url": "https://pbs.twimg.com/profile_banners/906230721513181184/1594844428",
-      "profile_link_color": "ABB8C2",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1297996269999333383/hIonpevN_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1297996269999333383/hIonpevN_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1003282031147737088/1598636552",
+      "profile_link_color": "981CEB",
       "profile_sidebar_border_color": "000000",
       "profile_sidebar_fill_color": "000000",
       "profile_text_color": "000000",
       "profile_use_background_image": false,
-      "has_extended_profile": false,
+      "has_extended_profile": true,
       "default_profile": false,
       "default_profile_image": false,
       "following": false,
@@ -198,15 +246,15 @@
     "place": null,
     "contributors": null,
     "is_quote_status": false,
-    "retweet_count": 59,
-    "favorite_count": 277,
+    "retweet_count": 34,
+    "favorite_count": 75,
     "favorited": false,
     "retweeted": false,
     "possibly_sensitive": false,
     "lang": "en"
   },
   "is_quote_status": false,
-  "retweet_count": 59,
+  "retweet_count": 34,
   "favorite_count": 0,
   "favorited": false,
   "retweeted": false,
