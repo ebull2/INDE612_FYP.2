@@ -1,7 +1,7 @@
 
 
 
-
+// Module to do web scraping
 const puppeteer = require('puppeteer');
 
 
@@ -11,6 +11,7 @@ async function scrapeAddress3(url) {
     const page  = await browser.newPage();
     await page.goto(url);
 
+    //    Calling in Xpath to select the data 
    
     await page.waitForXPath('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[1]/td[2]/a/div/div/p');
     const [el]= await page.$x('//*[@id="__next"]/div/div[1]/div[2]/div/div/div[2]/table/tbody/tr[1]/td[2]/a/div/div/p');
@@ -215,7 +216,8 @@ async function scrapeAddress3(url) {
 
 
     const exchanges = JSON.stringify(cryptoExchanges, null, 4);
-    
+
+    // Write to JSON file
     fs.writeFileSync('server/exchange-data.json', exchanges);
 
     console.log({ exchange1, exchange2, exchange3, exchange4, exchange5, exchange6, exchange7, exchange8, exchange9, exchange10, rating1, rating2, rating3, rating4, rating5,
@@ -236,6 +238,8 @@ module.exports = {
 
     scrapeAddress3
 }
+
+// Website used to scrape
 
 scrapeAddress3('https://coinmarketcap.com/rankings/exchanges/',);
 

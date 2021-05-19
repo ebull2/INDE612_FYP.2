@@ -10,6 +10,7 @@
     <section>
 
 
+ <!-- Nav Menu to navigate between pages  -->
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -26,10 +27,14 @@
             <img src="../assets/menu-icon.png" style="width: 50px" class="mt-4">
         </span>
 
+        <!-- Center logo to resemble app -->
+
         <div class="text-center logo-icon">
         <a href="index"><img src="assets/final-logo.png" width=50px></a>
         </div>
         
+
+        <!-- Twitter notifications Pop Up -->
 
         <div class="container">
       <!-- Modal -->
@@ -54,6 +59,8 @@
       </div>
     </div>
 
+
+        <!-- Widgets for cryptoCurrency Prices -->
 
         <div class="container-fluid mt-2">
            <div class="row">
@@ -86,7 +93,8 @@
         </div>
          </div>
          
-         <!-- REMEMBER TO CODE OUT DOCUMENTATION -->
+
+         <!-- Chart for Bitcoin -->
 
             <div class="col-xl-5 col-xs-2 align-items-end">
                 <div class="card2">
@@ -126,6 +134,7 @@
 
         </div>
 
+        <!-- Card widget for about information -->   
 
         <div class="container-fluid">
         <div class="row">
@@ -150,6 +159,7 @@
 
            </div>
 
+<!-- Card widget for about information -->
 
         <div class="col-xl-5 col-xs-2 mt-5">
             <div class="news">
@@ -178,6 +188,7 @@
            </div>
 
 
+           <!-- Widget for tweet feed based on relativity to cryptoCurrency -->
            
            <div class="container-fluid">
            <div class="col-xl-10 col-xs-4">
@@ -217,6 +228,7 @@
     </section>
 
 
+    <!-- Toggle theme switcher for light and dark mode  -->
     
     <div class="theme-switcher">
         <input type="checkbox" id="switcher">
@@ -230,11 +242,14 @@
 <script>
 
 
+// Script for twitter notification pop up
 
 $(window).load(function(){
         $('#myModal').modal('show');
     });
     
+
+// Script for nav menu
 
 function openNav() {
         document.getElementById("mySidenav").style.width = "380px";
@@ -250,8 +265,14 @@ function openNav() {
 
 </body>
 
+<!-- My script -->
+
 <script src="js/script.js"></script>
+
+<!-- bootstrap script -->
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+
 </html>

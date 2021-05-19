@@ -1,5 +1,7 @@
 
 
+// All API keys and access tokens are here 
+
 module.exports = {
 
     consumer_key:         'sEZPNdDPEWgI3HcCAFyPSTXWI',

@@ -24,8 +24,6 @@ app.use('/json', express.static(__dirname + 'server/tweets.json'))
 app.locals.prices = require('./server/data.json');
 app.locals.news = require('./server/news-data.json');
 app.locals.tweets = require('./server/tweets.json');
-
-
 app.locals.exchanges = require('./server/exchange-data.json');
 
 

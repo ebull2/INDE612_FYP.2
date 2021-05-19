@@ -1,4 +1,6 @@
 
+
+// Module to do web scraping
 const puppeteer = require('puppeteer');
 const mongo = require('./mongo');
 const express = require('express')
@@ -13,6 +15,7 @@ async function scrapeAddress(url) {
     const page  = await browser.newPage();
     await page.goto(url);
 
+    // Calling in Xpath to select the data 
    
     await page.waitForXPath('//*[@id="market-table"]/tbody/tr[1]/td[2]/a');
     const [el]= await page.$x('//*[@id="market-table"]/tbody/tr[1]/td[2]/a');
@@ -47,11 +50,6 @@ async function scrapeAddress(url) {
     const txt6 = await el6.getProperty('textContent');
     const XRPvolume = await txt6.jsonValue();
 
-
-
-    //*[@id="market-table"]/tbody/tr[7]/td[5]/a
-
-    //having problems with finding websites that have correct Xpath to use.
 
 
 
@@ -103,6 +101,8 @@ async function scrapeAddress(url) {
 
 
     const data = JSON.stringify(cryptoPrices, null, 4 );
+
+    // Write to JSON file
     
     fs.writeFileSync('server/data.json', data,);
     
@@ -122,6 +122,7 @@ module.exports = {
 }
 
 
+// Website used to scrape
 
 scrapeAddress('https://www.cryptocurrencymarket.uk/',);
 

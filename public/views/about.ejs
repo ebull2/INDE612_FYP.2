@@ -20,6 +20,7 @@
 
 <section>
     
+   <!-- Nav Menu to navigate between pages  -->
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -29,6 +30,7 @@
 
   </div>
 
+      <!-- Center logo to resemble app -->
 
       <span style="font-size:30px;cursor:pointer;margin-left:50px;" class="nav-icon toggleable" onclick="openNav()">
 
@@ -37,6 +39,7 @@
 
 
     
+    <!-- Heading -->
 
     <div class="M-heading">
         <div class="text-center">
@@ -45,9 +48,11 @@
         </div>
         </div>
 
+        <!-- Card widget for about information -->
 
+        <div class="card-body col-xl-6 col-xs-1 col-md-6" style="height:auto">
 
-        <div class="card-body col-xl-6 col-xs-1 col-md-6 text-center" style="height:auto">
+          <div class="text-center">
 
 
             <a href="index"><img src="assets/new-logoWtxt.png" style="width:130px;" class="mb-4"></a>
@@ -59,7 +64,18 @@
 
                 <br><br> 
                 Collecting all information from <a href="https://www.cryptocurrencymarket.uk/" target="_blank">www.cryptocurrencymarket.uk</a> for the Prices and <a href="https://www.cryptonews.net" target="_blank">www.cryptonews.net</a> for the News.
-            </p>
+              
+                <br><br> 
+              </p>
+
+            </div>
+
+            <hr class="hr">
+
+            <h3 class="mt-5" style="color: #906ab6;">What Next?</h3>
+
+            <p>We do our research, speak to friends, and ask them about where and why we should invest in certain cryptos. Our research should come from multiple sources, and should be calculated then based on how relevant we believe that which we are about to invest in will be - or is currently.<br><br> Crypto is heavily dependant on trends. Use YouTube - curate the search to relevant / past 24/hours, search crypto and start there. read comments and follow the leads wherever they take you. Use the resources you have such as friends or ask people on comments for advice. Learn from all the resources out there who describe technical analysis (people who know how to interpret patterns to make predictions) and begin to develop your own understanding.
+              The more we understand the reason we are investing, the easier we will be able to make our own decisions - and to curate our own understanding of who we trust. To begin with - we will normally make our investments on the people we believe we can trust. </p>
 
         </div>
           </div>
@@ -77,16 +93,23 @@
     </section>
 
 
+     <!-- Toggle theme switcher for light and dark mode  -->
+
+     <div class="theme-switcher">
+      <input type="checkbox" id="switcher">
+      <label for=switcher>switch</label>
+    </div>
+  </div>
+
+
     <%- include('partials/footer'); -%>
 
 
-        <div class="theme-switcher">
-            <input type="checkbox" id="switcher">
-            <label for=switcher>switch</label>
-          </div>
-    
+  
 
     <script>
+
+      // Script for nav menu
 
         function openNav() {
         document.getElementById("mySidenav").style.width = "380px";
@@ -98,25 +121,16 @@
 
     </script>
     
-     <!-- jQuery library -->
-     <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-     integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-     crossorigin = "anonymous">
-  </script>
-  
-  <!-- Popper -->
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-     integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
-     crossorigin = "anonymous">
-  </script>
-  
-  <!-- Latest compiled and minified Bootstrap JavaScript -->
-  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-     integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-     crossorigin = "anonymous">
-  </script>
+     
+<!-- My script -->
 
 <script src="js/script.js"></script>
+
+<!-- bootstrap script -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

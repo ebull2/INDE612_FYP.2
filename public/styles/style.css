@@ -169,10 +169,6 @@ input:checked + label {
 }
 
 
-
-
-
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -292,14 +288,12 @@ label{
 }
 
 
-
 .logo-icon 
 {
   margin-top: -20px;
   margin-bottom: 20px
 
 }
-
 
 
 .card {
@@ -347,7 +341,6 @@ label{
 }
 
 
-
 @media screen and (max-width: 700px) {
   .card2 {
 
@@ -361,9 +354,6 @@ label{
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
-
-
-  
 
 }
 
@@ -393,10 +383,9 @@ label{
     color: var(--color-5);
     font-size: 2em;
     font-family: 'Comfortaa', cursive    
-
-
 }
-f
+
+
 .volume 
 {
     margin-top: 10px;
@@ -561,7 +550,6 @@ f
 
 
 
-
 .feed 
 {
   margin-right: auto;
@@ -577,8 +565,6 @@ f
   justify-content: center;
 
 }
-
-
 
 
 #cryptoTitle, #cryptoTitle2, #cryptoTitle3, #cryptoTitle4
@@ -602,16 +588,12 @@ f
 
 }
 
-
-
    .M-heading 
    {
-
     margin-top: 30px;
     color: #804DB3;
     font-family: 'Comfortaa', cursive !important;
     padding-bottom: 10px;
-;
   }
 
 
@@ -654,7 +636,6 @@ f
 
 
 
-
  @media only screen and (max-width:  700px) 
 {
 .card-body {
@@ -665,8 +646,6 @@ f
 }
 
 }
-
-
 
 .socials
 {
@@ -681,7 +660,6 @@ f
 
     color: #a483c0;
 }
-
 
 
 #separator {
@@ -841,8 +819,6 @@ f
   }
 
 
-
-
   #tweetName, #tweetLocation, #tweetDate 
   {
 
@@ -895,12 +871,6 @@ f
 }
 
   
-
-
-
-
-
-
   @media (min-width: 1200px)
   {
 .col-xl-10 {
@@ -937,6 +907,7 @@ f
   html.theme-dark .tv-ticker-item-last__short-name {
     color: #4f526e !important;
 }
+
 
 
 #myModal {
@@ -982,8 +953,15 @@ f
   opacity: .5;
 
 }
+
+
 .close:hover {
 
   color: #fff;
 }
 
+.hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+}

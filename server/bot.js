@@ -14,9 +14,9 @@ console.log('Bot is Live')
 var T = new Twit(config);
 
 
+// COLLECT TWEETS
 
-// Collect tweets
-
+// Calling in tweets related to 'Crypto News'
 
 T.get('search/tweets', { q: 'Crypto News', count: 1 },
 
@@ -26,7 +26,8 @@ function(err, data, response) {
 
     const tweetBot = JSON.stringify(tweets[i], null, 2);
     
-    fs.writeFileSync('server/tweets.json', tweetBot);
+    // Write to a JSON file
+    fs.writeFileSync('server/tweets.json', tweetBot); 
     
 
     console.log(tweets[i].text);
