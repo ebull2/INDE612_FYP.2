@@ -16,21 +16,21 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
 ## TO RUN:
 
-    In terminal - 
+   In terminal - 
 
     npm run start all 
 
-    http://localhost:3005/
+   http://localhost:3005/
     
 
-    Heroku App - 
+   Heroku App - 
 
-    https://unify-crypto.herokuapp.com/
+   https://unify-crypto.herokuapp.com/
 
 
-    Using Glitch - 
+   Using Glitch - 
 
-    https://unify-crypto.glitch.me/
+   https://unify-crypto.glitch.me/
 
     
 
