@@ -34,10 +34,7 @@
     "npm-run-all": "^4.1.5",
     "pug": "^3.0.2",
     "puppeteer": "^8.0.0",
-    "twit": "^2.2.11"
-  },
-  "keywords": [],
-  "devDependencies": {
+    "twit": "^2.2.11",
     "concurrently": "^6.1.0",
     "nodemon": "^2.0.7"
   }
