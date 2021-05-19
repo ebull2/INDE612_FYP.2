@@ -11,7 +11,7 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 ### To install all dependencies, do:
 
 
-    npm install nodemon puppeteer mongoose express body-parser buffer-shims twit concurrently node-fetch ejs express-ejs-layouts Concurrently 
+    npm install nodemon puppeteer mongoose express body-parser buffer-shims twit node-fetch ejs express-ejs-layouts Concurrently 
    
 
 ## TO RUN:
