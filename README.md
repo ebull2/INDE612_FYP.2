@@ -14,8 +14,7 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
 Dev Dependecies:
 
-    - Concurrently 
-    - nodemon
+    npm install --dev Concurrently nodemon
 
 
 ## TO RUN:
