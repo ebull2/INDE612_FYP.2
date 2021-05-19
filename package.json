@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "scrapers": "nodemon server/scrapers.js",
+    "prices": "nodemon server/scrapers.js",
     "Crypto-News": "nodemon server/CryptoNews-scraper.js",
     "Exchanges": "nodemon server/exchanges-scraper.js",
     "Bot": "node server/bot.js",
