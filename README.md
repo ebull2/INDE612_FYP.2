@@ -25,7 +25,7 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
    Heroku App - 
 
-   https://unify-crypto.herokuapp.com/
+   https://unify--crypto.herokuapp.com/
 
 
    Using Glitch - 
