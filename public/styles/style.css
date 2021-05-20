@@ -353,8 +353,14 @@ label{
     margin-top: 80px;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 0px;
+    padding: 0px !important;
+    padding-top: 20px;
 
+}
+
+.nav-icon {
+
+  margin-left: 40px;
 }
 
 }
@@ -389,7 +395,8 @@ label{
 .volume 
 {
     margin-top: 10px;
-    font-size: 0.8em !important; 
+    margin-left: 0px !important;
+    font-size: 1.2em !important; 
     color: var(--color-1);
     font-family: 'Comfortaa', cursive !important
 
@@ -686,15 +693,22 @@ label{
     border-radius: 20px;
     }
 
+    .ml-6 {
 
-  .ml-9
+      margin-left: 5%
+
+    }
+
+
+
+  .ml-7
   {
 
-    margin-left: 20%
+    margin-left: 12%
 
   }
 
-  .ml-10 
+  .ml-8
   {
 
     margin-left: 180px
@@ -713,21 +727,25 @@ label{
   margin-right: auto;
   font-size: 14px;
   border-radius: 10px;
-  width: 40px;
+  width: 20px;
   height: 25px;
   text-align: center;
   line-height: 24px;
   color: rgb(255, 255, 255);
   background-color: #804DB3;
+  z-index: 200;
 
 
   }
 
+  .ml {
 
-  #volume1,  #volume2,  #volume3,  #volume4,  #volume5,  #volume6,  #volume7,  #volume8,  #volume9,  #volume10 {
+    margin-left: 15%;
+  }
 
 
-
+  #volume1,  #volume2,  #volume3,  #volume4,  #volume5,  #volume6,  #volume7,  #volume8,  #volume9,  #volume10 
+  {
     color: #80b34d;
     font-size: 0.8em;
     font-family: 'Comfortaa', cursive
@@ -827,8 +845,26 @@ label{
   }
 
 
+  .table-h
+  {
+
+    font-size: 1.75rem;
+
+  }
+
+
   @media only screen and (max-width:  700px) 
 { 
+
+  .S-heading {
+
+    padding-left: 5px;
+  }
+
+  .table-h {
+
+    font-size: 0.8em;
+  }
 
   .card4 {
 
@@ -844,16 +880,33 @@ label{
 
   }
 
-  .rating {
-
-    margin-left: 0px;
-
-  }
-
-  .volume
+  .ml-3 
   {
 
     margin-left: 0px !important;
+
+  }
+
+
+  #rating1, #rating2, #rating3, #rating4, #rating5, #rating6, #rating7, #rating8, #rating9, #rating10 {
+
+    width: 50px !important;
+    height: 25px;
+    padding: 0px;
+    margin-bottom: 15px;
+    
+  }
+  
+#volume10 
+{
+
+  margin-left: 0px !important;
+}
+
+  .col {
+
+    margin-bottom: 15px;
+    padding-left: 0px;
 
   }
 
@@ -866,7 +919,31 @@ label{
     margin: 0px !important;
   }
 
+ 
+  .ml-5 
+  {
 
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+
+  }
+
+  .ml
+  {
+
+    margin-left: 0px !important;
+  }
+
+.ml-9
+{
+
+   margin-left: 5%;
+}
+
+  .row {
+
+    margin-left: 0px !important;
+  }
 
 }
 

@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../public/styles/style.css">
-    <link rel="shortcut icon" href="./assets/final-logo.png" type="image/png">
+<%- include('partials/header'); -%>
+
     <title>UNIFY | About</title>
 </head>
 <body data-theme="light">
@@ -30,12 +17,23 @@
 
   </div>
 
-      <!-- Center logo to resemble app -->
 
-      <span style="font-size:30px;cursor:pointer;margin-left:50px;" class="nav-icon toggleable" onclick="openNav()">
+      <!-- Nav Menu to navigate between pages  -->
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index">HOME</a>
+        <a href="exchanges">HOW TO INVEST?</a>
+        <a href="about">ABOUT</a>
+
+      </div>
+
+
+      <span style="font-size:30px;cursor:pointer;" class="nav-icon toggleable ml-4" onclick="openNav()">
 
         <img src="./assets/menu-icon.png" style="width: 50px" class="mt-4">
     </span>
+
 
 
     
@@ -50,7 +48,7 @@
 
         <!-- Card widget for about information -->
 
-        <div class="card-body col-xl-6 col-xs-1 col-md-6" style="height:auto">
+        <div class="card-body col-xl-6 col-xs-1 col-md-6 p-4" style="height:auto">
 
           <div class="text-center">
 
