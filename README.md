@@ -18,7 +18,7 @@ First repositery here: https://github.com/ebull2/INDE612_FYP (Had to make a new 
 
    In terminal - 
 
-    npm run start all 
+    npm run start-all 
 
    http://localhost:3005/
     
